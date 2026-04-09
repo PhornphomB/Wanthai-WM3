@@ -1,0 +1,257 @@
+/* 
+   Plupload
+------------------------------------------------------------------- */
+
+.plupload_wrapper * {
+    box-sizing: content-box;
+}
+
+.plupload_button {
+    display: -moz-inline-box; /* FF < 3*/
+    display: inline-block;
+    font: normal 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 2px 8px 3px 8px;
+    margin-right: 4px;
+    /*background: #f3f3f3 url('../img/buttons.png') no-repeat 0 center;*/
+    outline: 0;
+    /* Optional rounded corners for browsers that support it */
+}
+
+    .plupload_button:hover {
+        text-decoration: none;
+    }
+
+.plupload_add {
+    color: #fff;
+    background-color: #08941C;
+    border: 1px solid #08941C;
+}
+
+    .plupload_add:hover {
+        color: #fff;
+        background-color: #087A1C;
+        border: 1px solid #087A1C;
+    }
+
+
+.plupload_start {
+    background-color: #007ACC;
+    border: 1px solid #007ACC;
+    color: #fff;
+}
+
+    .plupload_start:hover {
+        color: #fff;
+        background-color: #0056B4;
+        border: 1px solid #0056B4;
+    }
+
+
+.plupload_disabled, a.plupload_disabled:hover {
+    color: #BFBFBF;
+    background-color: #F5F5F5;
+    border-color: #ddd;
+    /*background: #ededed url('../img/buttons-disabled.png') no-repeat 0 center;*/
+    cursor: default;
+}
+
+.plupload_add {
+    background-position: -181px center;
+}
+
+.plupload_wrapper {
+    font: normal 11px;
+    width: 100%;
+}
+
+.plupload_container {
+    padding: 8px;
+    background: url('../img/transp50.png');
+    /*-moz-border-radius: 5px;*/
+}
+
+    .plupload_container input {
+        border: 1px solid #DDD;
+        font: normal 11px;
+        width: 160px;
+    }
+
+.plupload_header {
+    background: #2A2C2E;
+    /* url('../img/backgrounds.gif') repeat-x;*/
+}
+
+.plupload_header_content {
+    /*background: url('../img/backgrounds.gif') no-repeat 0 -317px;*/
+    min-height: 56px;
+    padding-left: 20px;
+    color: #FFF;
+    display: none;
+}
+
+.plupload_header_title {
+    font: normal 18px;
+    padding: 6px 0 3px;
+}
+
+.plupload_header_text {
+    font: normal 12px;
+}
+
+.plupload_filelist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.plupload_scroll .plupload_filelist {
+    height: 80px;
+    background: #fff;
+    border-left: 2px dotted #ddd;
+    border-right: 2px dotted #ddd;
+    overflow-y: auto;
+    border-top: 2px dotted #ddd;
+}
+
+.plupload_filelist li {
+    padding: 10px 8px;
+    background-color: #fff;
+    border-bottom: 1px dotted #ddd;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.plupload_filelist_header, .plupload_filelist_footer {
+    border-left: 2px dotted #ddd;
+    background-color: #eee;
+    padding: 8px 8px;
+    color: #007ACF;
+}
+
+.plupload_filelist_header {
+    border-top: 2px dotted #ddd;
+    border-right: 2px dotted #ddd;
+    border-bottom: 2px solid #169DD8;
+    background-color: #fff;
+    display: none;
+}
+
+.plupload_filelist_footer {
+    border-top: 0px;
+    border-right: 2px dotted #ddd;
+    border-bottom: 2px dotted #ddd;
+    height: 20px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+.plupload_file_name {
+    float: left;
+    overflow: hidden;
+}
+
+.plupload_file_status {
+    color: #007ACF;
+}
+
+    .plupload_file_status span {
+        color: #007ACF;
+    }
+
+.plupload_file_size, .plupload_file_status, .plupload_progress {
+    float: right;
+    width: 80px;
+}
+
+.plupload_file_size, .plupload_file_status, .plupload_file_action {
+    text-align: right;
+}
+
+.plupload_filelist .plupload_file_name {
+    width: 205px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.plupload_file_action {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
+}
+
+    .plupload_file_action * {
+        display: none;
+        width: 16px;
+        height: 16px;
+    }
+
+li.plupload_uploading {
+    background: #ECF3DC url('../img/backgrounds.gif') repeat-x 0 -238px;
+}
+
+li.plupload_done {
+    color: #AAA;
+}
+
+li.plupload_delete a {
+    background: url('../img/delete.gif');
+}
+
+li.plupload_failed a {
+    background: url('../img/error.gif');
+    cursor: default;
+}
+
+li.plupload_done a {
+    background: url('../img/done.gif');
+    cursor: default;
+}
+
+.plupload_progress, .plupload_upload_status {
+    display: none;
+}
+
+.plupload_progress_container {
+    margin-top: 3px;
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 1px;
+}
+
+.plupload_progress_bar {
+    width: 0px;
+    height: 7px;
+    background: #88B7CE;
+}
+
+.plupload_scroll .plupload_filelist_header .plupload_file_action, .plupload_scroll .plupload_filelist_footer .plupload_file_action {
+    margin-right: 17px;
+}
+
+/* Floats */
+
+.plupload_clear, .plupload_clearer {
+    clear: both;
+}
+
+.plupload_clearer, .plupload_progress_bar {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+}
+
+li.plupload_droptext {
+    font-size: 20px;
+    text-transform:uppercase;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+    color: #f89406;
+    background: transparent;
+    text-align: center;
+    vertical-align: middle;
+    border: 0;
+    line-height: 60px;
+}

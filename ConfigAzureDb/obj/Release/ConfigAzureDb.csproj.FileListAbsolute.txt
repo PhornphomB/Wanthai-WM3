@@ -1,0 +1,2 @@
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Release\ConfigAzureDb.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Release\ConfigAzureDb.csproj.CoreCompileInputs.cache

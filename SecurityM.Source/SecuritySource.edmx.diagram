@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="286aa2b136d646d481b2c248f32e3068" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="SecurityModel.t_com_application" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_config" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_locale" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_menu" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_resource_detail" Width="1.5" PointX="13" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_resource_master" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user" PointX="10" PointY="6" Width="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_application" Width="1.5" PointX="5.25" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_group" Width="1.5" PointX="3" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_group_menu" Width="1.5" PointX="8" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_logon" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_application" ManuallyRouted="false" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_config_t_com_application" ManuallyRouted="false" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_user_group_t_com_application" ManuallyRouted="false" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_user_logon_t_com_application" ManuallyRouted="false" />
+        <AssociationConnector ManuallyRouted="false" Association="SecurityModel.FK_t_com_user_t_com_locale" />
+        <AssociationConnector Association="SecurityModel.FK_menu_id" ManuallyRouted="false" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_resource_detail_t_com_resource_master" ManuallyRouted="false" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_user_group" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SecurityModel.v_com_get_authen_by_menu_group" Width="1.5" PointX="7.375" PointY="11.75" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_device" Width="1.5" PointX="3" PointY="9.125" />
+        <AssociationConnector Association="SecurityModel.FK_t_com_user_device_t_com_application" />
+        <EntityTypeShape EntityType="SecurityModel.t_com_user_change_password_log" Width="1.5" PointX="9.375" PointY="11.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

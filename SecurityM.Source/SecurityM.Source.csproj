@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{16791C24-834D-4C87-9587-94520EA77B38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SecurityM.Source</RootNamespace>
+    <AssemblyName>SecurityM.Source</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConfigAzureDb">
+      <HintPath>..\ConfigAzureDb\bin\Debug\ConfigAzureDb.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SecuritySource.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecuritySource.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecuritySource.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SecuritySource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SecuritySource.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_application.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_config.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_locale.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_menu.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_resource_detail.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_resource_master.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_application.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_change_password_log.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_device.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_group.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_group_menu.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_user_logon.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_com_get_authen_by_menu_group.cs">
+      <DependentUpon>SecuritySource.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <EntityDeploy Include="SecuritySource.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SecuritySource.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="packages.config" />
+    <None Include="SecuritySource.edmx.diagram">
+      <DependentUpon>SecuritySource.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SecuritySource.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecuritySource.edmx</DependentUpon>
+      <LastGenOutput>SecuritySource.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SecuritySource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SecuritySource.edmx</DependentUpon>
+      <LastGenOutput>SecuritySource.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

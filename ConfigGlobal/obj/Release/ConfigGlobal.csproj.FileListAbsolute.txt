@@ -1,0 +1,2 @@
+D:\Program\Wan_Thai\Web\ConfigGlobal\obj\Release\ConfigGlobal.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\ConfigGlobal\obj\Release\ConfigGlobal.csproj.CoreCompileInputs.cache

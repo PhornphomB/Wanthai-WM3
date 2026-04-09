@@ -1,0 +1,701 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Program\\Wan_Thai\\Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|d:\\program\\wan_thai\\web\\wms_new\\masterdata\\location.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\location.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\masterdata\\location.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\location.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\_extensionclass\\exportexcel_epplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\_extensionclass\\exportexcel_epplus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEF13F85-A16C-4EBE-81AE-857E9E537995}|WMS_NEW.Source\\WMS_NEW.Source.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.source\\datasource.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{BEF13F85-A16C-4EBE-81AE-857E9E537995}|WMS_NEW.Source\\WMS_NEW.Source.csproj|solutionrelative:wms_new.source\\datasource.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\count\\countreconcil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\count\\countreconcil.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\transaction\\inventory\\inventoryviewer\\inventoryserial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\transaction\\inventory\\inventoryviewer\\inventoryserial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\administrator\\interfacemonitor\\inbound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\administrator\\interfacemonitor\\inbound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\administrator\\interfacemonitor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\administrator\\interfacemonitor.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\administrator\\interfacemonitor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\administrator\\interfacemonitor.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\administrator\\interfacemonitor2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\administrator\\interfacemonitor2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\inbound.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\inbound.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\inbound.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\inbound.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\transaction\\inbound\\inboundmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\transaction\\inbound\\inboundmaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\masterdata\\mapping\\userowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\masterdata\\mapping\\userowner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\masterdata\\mapping\\userowner.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\mapping\\userowner.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\masterdata\\mapping\\userowner.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\mapping\\userowner.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundreceipt.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundreceipt.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\export\\inbounddetail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\export\\inbounddetail.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\masterdata\\item.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\item.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\masterdata\\item.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\masterdata\\item.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\_ucontrols\\uploadfileex.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\_ucontrols\\uploadfileex.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprint.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprint.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprint144.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprint144.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucinbounddetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucinbounddetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprintlabeldetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucinboundprintlabeldetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\count\\countreconcil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\count\\countreconcil.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\inboundcancelpallet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\inboundcancelpallet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\transaction\\inbound\\receipt\\receiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\transaction\\inbound\\receipt\\receiptdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucreceivepartial.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucreceivepartial.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inbound\\ascxcontrol\\ucreceivepartial.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inbound\\ascxcontrol\\ucreceivepartial.ascx||{F390D63C-F7D8-4E74-AA04-57C1ECF53D4D}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inventory\\inventoryviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inventory\\inventoryviewer.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new.access\\transaction\\count\\countplandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E45D6DC-933D-4F46-84A5-2C225F650480}|WMS_NEW.Access\\WMS_NEW.Access.csproj|solutionrelative:wms_new.access\\transaction\\count\\countplandetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B5B4521-5F80-404F-BABF-F3095BC11FAF}|Prototype.Providers 2\\Prototype.Providers.csproj|D:\\Program\\Wan_Thai\\Web\\prototype.providers 2\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B5B4521-5F80-404F-BABF-F3095BC11FAF}|Prototype.Providers 2\\Prototype.Providers.csproj|solutionrelative:prototype.providers 2\\logging.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\inventory\\inventoryviewer.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\inventory\\inventoryviewer.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|D:\\Program\\Wan_Thai\\Web\\wms_new\\transaction\\outbound\\ascxcontrols\\picklistdetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}|WMS_NEW\\WMS_NEW.csproj|solutionrelative:wms_new\\transaction\\outbound\\ascxcontrols\\picklistdetail.ascx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 239,
+          "SelectedChildIndex": 26,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountReconcil.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Count\\CountReconcil.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Count\\CountReconcil.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Count\\CountReconcil.aspx",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Count\\CountReconcil.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-25T01:54:33.45Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:17:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:24:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:25:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:26:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:27:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:28:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:29:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:30:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:21:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:19:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:23:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:18:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:22:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:13:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:15:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Location.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Location.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Location.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Location.aspx",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Location.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-31T08:58:18.417Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExportExcel_EPPlus.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\_ExtensionClass\\ExportExcel_EPPlus.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\_ExtensionClass\\ExportExcel_EPPlus.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\_ExtensionClass\\ExportExcel_EPPlus.cs",
+              "RelativeToolTip": "WMS_NEW\\_ExtensionClass\\ExportExcel_EPPlus.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAuwCYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T07:00:46.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Location.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Location.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Location.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Location.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Location.aspx.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAwwBUBAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-27T06:30:41.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataSource.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Source\\DataSource.edmx",
+              "RelativeDocumentMoniker": "WMS_NEW.Source\\DataSource.edmx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Source\\DataSource.edmx [Diagram1]",
+              "RelativeToolTip": "WMS_NEW.Source\\DataSource.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2026-03-31T03:40:30.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "InventorySerial.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inventory\\InventoryViewer\\InventorySerial.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\Transaction\\Inventory\\InventoryViewer\\InventorySerial.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inventory\\InventoryViewer\\InventorySerial.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\Transaction\\Inventory\\InventoryViewer\\InventorySerial.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwA8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T03:55:48.378Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Inbound.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Administrator\\InterfaceMonitor\\Inbound.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\Administrator\\InterfaceMonitor\\Inbound.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Administrator\\InterfaceMonitor\\Inbound.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\Administrator\\InterfaceMonitor\\Inbound.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T09:01:34.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "InterfaceMonitor.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\Administrator\\InterfaceMonitor.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor.aspx",
+              "RelativeToolTip": "WMS_NEW\\Administrator\\InterfaceMonitor.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-03-11T09:01:15.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InterfaceMonitor2.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor2.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Administrator\\InterfaceMonitor2.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor2.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Administrator\\InterfaceMonitor2.aspx.cs",
+              "ViewState": "AgIAABYBAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T02:37:46.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "InboundMaster.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inbound\\InboundMaster.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\Transaction\\Inbound\\InboundMaster.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inbound\\InboundMaster.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\Transaction\\Inbound\\InboundMaster.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAkwIsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-02T08:38:53.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UserOwner.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T04:13:30.954Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserOwner.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Mapping\\UserOwner.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-02-27T04:12:20.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserOwner.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\MasterData\\Mapping\\UserOwner.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\MasterData\\Mapping\\UserOwner.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\MasterData\\Mapping\\UserOwner.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\MasterData\\Mapping\\UserOwner.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAowCAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-27T03:54:20.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InterfaceMonitor.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Administrator\\InterfaceMonitor.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Administrator\\InterfaceMonitor.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Administrator\\InterfaceMonitor.aspx.cs",
+              "ViewState": "AgIAAHoBAAAAAAAAAAAYwIcBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-04T08:45:22.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Item.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Item.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Item.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Item.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Item.aspx.cs",
+              "ViewState": "AgIAAOQAAAAAAAAAAAAlwPYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-12T04:34:22.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Item.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Item.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\MasterData\\Item.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\MasterData\\Item.aspx",
+              "RelativeToolTip": "WMS_NEW\\MasterData\\Item.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2026-01-12T04:34:16.897Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UploadFileEx.ascx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\_UControls\\UploadFileEx.ascx",
+              "RelativeDocumentMoniker": "WMS_NEW\\_UControls\\UploadFileEx.ascx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\_UControls\\UploadFileEx.ascx",
+              "RelativeToolTip": "WMS_NEW\\_UControls\\UploadFileEx.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2026-01-12T04:34:07.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ucInboundReceipt.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundReceipt.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundReceipt.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundReceipt.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundReceipt.ascx.cs",
+              "ViewState": "AgIAAO4BAAAAAAAAAAAIwAkCAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:21:25.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ucInboundPrint144.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint144.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint144.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint144.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint144.ascx.cs",
+              "ViewState": "AgIAALoAAAAAAAAAAAAmwNcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:21:20.194Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ucInboundPrint.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrint.ascx.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwEsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:21:12.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ucInboundDetail.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundDetail.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundDetail.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundDetail.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundDetail.ascx.cs",
+              "ViewState": "AgIAADMGAAAAAAAAAAAWwEgGAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:20:55.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ucInboundPrintLabelDetail.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrintLabelDetail.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrintLabelDetail.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrintLabelDetail.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucInboundPrintLabelDetail.ascx.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAIwNUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-29T16:20:12.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CountReconcil.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Count\\CountReconcil.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Count\\CountReconcil.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Count\\CountReconcil.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Count\\CountReconcil.aspx.cs",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAowO0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-12T06:44:24.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Inbound.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\Inbound.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\Inbound.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\Inbound.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\Inbound.aspx.cs",
+              "ViewState": "AgIAAC4DAAAAAAAAAAAlwDsDAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:42:08.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "InboundDetail.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Export\\InboundDetail.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Export\\InboundDetail.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Export\\InboundDetail.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Export\\InboundDetail.aspx.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCgAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:41:50.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ReceiptDetail.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inbound\\Receipt\\ReceiptDetail.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\Transaction\\Inbound\\Receipt\\ReceiptDetail.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Inbound\\Receipt\\ReceiptDetail.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\Transaction\\Inbound\\Receipt\\ReceiptDetail.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA+wCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T04:14:30.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "InboundCancelPallet.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\InboundCancelPallet.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\InboundCancelPallet.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\InboundCancelPallet.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\InboundCancelPallet.aspx.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAQwGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T06:42:14.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ucReceivePartial.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx.cs",
+              "ViewState": "AgIAAHkBAAAAAAAAAAApwIsBAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-12T04:13:20.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ucReceivePartial.ascx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\AscxControl\\ucReceivePartial.ascx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003302|",
+              "WhenOpened": "2025-12-12T04:12:58.723Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Inbound.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\Inbound.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inbound\\Inbound.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inbound\\Inbound.aspx",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inbound\\Inbound.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-12T04:12:30.046Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Logging.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\Prototype.Providers 2\\Logging.cs",
+              "RelativeDocumentMoniker": "Prototype.Providers 2\\Logging.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\Prototype.Providers 2\\Logging.cs",
+              "RelativeToolTip": "Prototype.Providers 2\\Logging.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAMwKcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:45:14.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CountPlanDetail.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Count\\CountPlanDetail.cs",
+              "RelativeDocumentMoniker": "WMS_NEW.Access\\Transaction\\Count\\CountPlanDetail.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW.Access\\Transaction\\Count\\CountPlanDetail.cs",
+              "RelativeToolTip": "WMS_NEW.Access\\Transaction\\Count\\CountPlanDetail.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAWwHsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T02:14:35.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "InventoryViewer.aspx",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-11-25T02:00:14.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "InventoryViewer.aspx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Inventory\\InventoryViewer.aspx.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAAAGAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:58:27.551Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PickListDetail.ascx.cs",
+              "DocumentMoniker": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Outbound\\AscxControls\\PickListDetail.ascx.cs",
+              "RelativeDocumentMoniker": "WMS_NEW\\Transaction\\Outbound\\AscxControls\\PickListDetail.ascx.cs",
+              "ToolTip": "D:\\Program\\Wan_Thai\\Web\\WMS_NEW\\Transaction\\Outbound\\AscxControls\\PickListDetail.ascx.cs",
+              "RelativeToolTip": "WMS_NEW\\Transaction\\Outbound\\AscxControls\\PickListDetail.ascx.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAowIMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-25T01:58:23.63Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 93,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BEF13F85-A16C-4EBE-81AE-857E9E537995}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS_NEW.Source</RootNamespace>
+    <AssemblyName>WMS_NEW.Source</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataSource.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSource.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataSource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSource.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="t_com_combobox_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_config_printer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_config_printer_group.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_config_printer_group_mapping.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_locale.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_process_log.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_report_manager.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_report_mapping_para.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_resource_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_resource_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_transaction.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_com_tran_log.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_export_interface_sap_hana.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_inbound_order.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_inbound_order_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_outbound_order.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_outbound_order_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_receipt_conf_detail_export.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_receipt_conf_header_export.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_ship_conf_detail_export.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_host_wms_ship_conf_header_export.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_interface_process_log_execute.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_tms_manifest_order_mapping.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_tms_truck_manifest.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_carrier.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_external_close_plan.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_plan_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_plan_detail_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_plan_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_plan_master_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_reconcile.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_reconcile_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_temporary.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_count_temporary_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_customer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_customer_location.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_customer_user.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_equipment.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_bom_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_bom_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_group_bom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_po_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inbound_po_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inventory.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inventory_bom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_inventory_status.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_issue_record.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_bom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_bom_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_crossref.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_pickface.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_item_uom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_location.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_location_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_location_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_bom_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_bom_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_comment.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_group_bom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_manifest_tsp.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_manifest_tsp_order_de.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_manifest_tsp_truck.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_pack_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_pick_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_outbound_pick_master.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_owner.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_owner_user.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_print_label.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_production_line.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_reason.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_receipt_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_receipt_header.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_replenishment_task.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_rule.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_shelf_life.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_sub_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_supplier.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_transport_by.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_truck.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_truck_type.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_wh.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_wh_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_wh_rule.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_wh_user.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_zone.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_zone_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="t_wms_zone_location.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_api_binding_user_pick_order_Result.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_outbound_check_picklist_item_by_group_result.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_outbound_check_picklist_item_result.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_wms_dashboard_item_movement_viewer_Result.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_wms_dashboard_location_movement_viewer_Result.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_receipt_header.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_receipt_line.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_ship_not_po_header.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_ship_not_po_line.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_ship_po_header.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_m3_ship_po_line.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_wms_customer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_host_wms_item_and_uom.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_outbound_inv_viewer_sum_qty_by_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_outbound_inv_viewer_sum_qty_item_diff.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_outbound_viewer_sum_qty_by_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_outbound_viewer_sum_qty_by_item_no_delivery_date.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_tms_assign_order.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_tms_assign_order_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_tms_assign_order_uncheck.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_tms_truck_manifest.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_adjust_export.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_plan_detail.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_plan_detail_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_plan_master_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile_merge.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile_merge_external.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile_merge_summary.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_count_reconcile_pallet.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashboard_inventory_status.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashboard_warehouse_virtual.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashb_center_card_inbound.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashb_center_card_outbound.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashb_center_period_inbound.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_dashb_center_period_outbound.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_export_inbound_detail_receipt.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inbound_detail_v2.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inbound_master_viewer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_by_aging.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_by_lpn.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_by_serial.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_by_serial_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_for_dashboard_exp.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_for_inv_compare.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_data_reprint.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_inventory_empty.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_label_printed.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_location_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_location_customer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_location_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_user_owner.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_user_warehouse.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_warehouse_item.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_zone_category.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_mapping_zone_location.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_allocate.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_detail_linenumber.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_pick_detail_linenumber.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_pick_detail_mini.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_rel_by_load.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_outbound_rel_by_load_header.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_print_label_viewer.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_print_lpn.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_receipt_detail_v2.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+    <Compile Include="v_wms_user.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DataSource.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DataSource.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="DataSource.edmx.diagram">
+      <DependentUpon>DataSource.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSource.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DataSource.Context.cs</LastGenOutput>
+      <DependentUpon>DataSource.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataSource.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DataSource.edmx</DependentUpon>
+      <LastGenOutput>DataSource.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfigAzureDb\ConfigAzureDb.csproj">
+      <Project>{54c6bfde-5adf-4123-bb74-23109aef1299}</Project>
+      <Name>ConfigAzureDb</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

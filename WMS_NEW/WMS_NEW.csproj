@@ -1,0 +1,1758 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WMS_NEW</RootNamespace>
+    <AssemblyName>WMS_NEW</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <Use64BitIISExpress>false</Use64BitIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CustomControls">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\CustomControls.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\ProjectVS\WMS_NEW_STD_V2_TFS\WMS_NEW\WMS_NEW\bin\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=5.6.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ProjectVS\AMS_Std\AMS.Web\AMS.Web\bin\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.4.369, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\ICSharpCode.SharpZipLib.dll.0.85.4.369\lib\net20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net45\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebDesign.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Neodynamic.SDK.WebClientPrint, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Neodynamic.SDK.WebClientPrint.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encoding.CodePages, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encoding.CodePages.6.0.0\lib\net461\System.Text.Encoding.CodePages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucInboundDetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucM3ReceiptDetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucOutboundDetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucReceiptDetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucShipDetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucShipNotPODetail.ascx" />
+    <Content Include="Administrator\AscxControls\InterfaceMonitor\ucShipPODetail.ascx" />
+    <Content Include="Administrator\InterfaceMonitor.aspx" />
+    <Content Include="Administrator\InterfaceMonitor2.aspx" />
+    <Content Include="Administrator\InterfaceSAPHana.aspx" />
+    <Content Include="Administrator\TransactionLog.aspx" />
+    <Content Include="Authen\AscxControls\ucResource.ascx" />
+    <Content Include="Authen\AssignMenu.aspx" />
+    <Content Include="Authen\Menu.aspx" />
+    <Content Include="Authen\User.aspx" />
+    <Content Include="Authen\UserGroup.aspx" />
+    <Content Include="Authen\UserLogon.aspx" />
+    <Content Include="ChangePass.aspx" />
+    <Content Include="Configuration\AscxControls\ucResourceDetail.ascx" />
+    <Content Include="Configuration\Printer\PrinterMapping.aspx" />
+    <Content Include="Configuration\Printer\PrinterGroup.aspx" />
+    <Content Include="Configuration\Printer\Printer.aspx" />
+    <Content Include="Configuration\ResourceMaster.aspx" />
+    <Content Include="Configuration\Rule.aspx" />
+    <Content Include="Configuration\ComboBox.aspx" />
+    <Content Include="DashBoard\AscxControls\ucWarehouseVirtualDetail.ascx" />
+    <Content Include="DashBoard\DBoardCenter.aspx" />
+    <Content Include="DashBoard\WarehouseVirtual.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Export\InboundDetail.aspx" />
+    <Content Include="Export\InventoryAdjust.aspx" />
+    <Content Include="Export\LabelPrinted.aspx" />
+    <Content Include="Export\OutboundDetail.aspx" />
+    <Content Include="Export\OutboundMaster.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Login.aspx" />
+    <Content Include="MasterData\AscxControls\BOMAgenDetail.ascx" />
+    <Content Include="MasterData\AscxControls\ItemCrossRef.ascx" />
+    <Content Include="MasterData\AscxControls\ItemPickface.ascx" />
+    <Content Include="MasterData\AscxControls\ItemUom.ascx" />
+    <Content Include="MasterData\AscxControls\SubCategory.ascx" />
+    <Content Include="MasterData\Bom.aspx" />
+    <Content Include="MasterData\ItemPickface.aspx" />
+    <Content Include="MasterData\Mapping\LocationCategory.aspx" />
+    <Content Include="MasterData\Mapping\CustomerLocation.aspx" />
+    <Content Include="MasterData\Mapping\LocationItem.aspx" />
+    <Content Include="MasterData\Mapping\WarehouseItem.aspx" />
+    <Content Include="MasterData\Mapping\ZoneCategory.aspx" />
+    <Content Include="MasterData\Mapping\ZoneLocation.aspx" />
+    <Content Include="MasterData\ModernTrade\ItemShelfLife.aspx" />
+    <Content Include="MasterData\ProductionLine.aspx" />
+    <Content Include="MasterData\Transportation\Carrier.aspx" />
+    <Content Include="MasterData\Customer.aspx" />
+    <Content Include="MasterData\Equipment.aspx" />
+    <Content Include="MasterData\Item.aspx" />
+    <Content Include="MasterData\ItemCategory.aspx" />
+    <Content Include="MasterData\Location.aspx" />
+    <Content Include="MasterData\Mapping\UserOwner.aspx" />
+    <Content Include="MasterData\Mapping\UserWarehouse.aspx" />
+    <Content Include="MasterData\Owner.aspx" />
+    <Content Include="MasterData\Reason.aspx" />
+    <Content Include="MasterData\Supplier.aspx" />
+    <Content Include="MasterData\Transportation\Truck.aspx" />
+    <Content Include="MasterData\Transportation\TruckType.aspx" />
+    <Content Include="MasterData\Warehouse.aspx" />
+    <Content Include="MasterData\Zone.aspx" />
+    <Content Include="Layout.Master" />
+    <Content Include="App_Themes\DefaultTheme\DefaultSkin.skin" />
+    <Content Include="Transaction\Inventory\ReportIssue.aspx" />
+    <Content Include="Report\AscxControls\ucReportStockCard.ascx" />
+    <Content Include="Transaction\Inventory\CancelReplenishment.aspx" />
+    <Content Include="Transaction\Count\CountPlanExt.aspx" />
+    <Content Include="Transaction\Count\CountReconcilExt.aspx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundCancelPalletDetail.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundPrint144.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundPrintLabelDetail.ascx" />
+    <Content Include="Transaction\Inbound\InboundCancelPallet.aspx" />
+    <Content Include="Transaction\Inbound\InboundPrintLabel.aspx" />
+    <Content Include="Transaction\Inventory\InventoryCompare.aspx" />
+    <Content Include="Transaction\Inventory\InventoryOutboundAllocate.aspx" />
+    <Content Include="Transaction\Outbound\AscxControls\AssignOrderDetail.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\AssignOrderUncheck.ascx" />
+    <Content Include="Transaction\Outbound\AssignOrder.aspx" />
+    <Content Include="Transaction\Outbound\CarRegister.aspx" />
+    <Content Include="_css\custom_uploadfile.css" />
+    <Content Include="_css\gallery-image.css" />
+    <Content Include="_images\ico_excel.png" />
+    <Content Include="_images\ico_pdf.png" />
+    <Content Include="_images\ico_word.png" />
+    <Content Include="_plugin\multiple_dropdown\bootstrap-multiselect.css" />
+    <Content Include="_plugin\multiple_dropdown\bootstrap-multiselect.js" />
+    <Content Include="_plugin\multiple_dropdown\bootstrap-multiselect.min.css" />
+    <Content Include="_plugin\multiple_dropdown\bootstrap-multiselect.min.js" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\css\jquery.plupload.queue.css" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\backgrounds.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\buttons-disabled.png" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\buttons.png" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\delete.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\done.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\error.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\throbber.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\img\transp50.png" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\jquery.plupload.queue.js" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.plupload.queue\jquery.plupload.queue.min.js" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.ui.plupload\css\jquery.ui.plupload.css" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.ui.plupload\img\loading.gif" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.ui.plupload\img\plupload.png" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.ui.plupload\jquery.ui.plupload.js" />
+    <Content Include="_plugin\plupload-v1.2.1\jquery.ui.plupload\jquery.ui.plupload.min.js" />
+    <Content Include="_plugin\plupload-v1.2.1\plupload.full.min.js" />
+    <Content Include="_scripts\uploadFile.js" />
+    <Content Include="_UControls\UploadFileEx.ascx" />
+    <Content Include="libman.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Report\AscxControls\ucReportViewer.ascx" />
+    <Content Include="Transaction\Count\CountPlan.aspx" />
+    <Content Include="Transaction\Count\CountReconcil.aspx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundDetail.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundPrint.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucInboundReceipt.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucReceiptDetail.ascx" />
+    <Content Include="Transaction\Inbound\AscxControl\ucReceivePartial.ascx" />
+    <Content Include="Transaction\Inbound\Inbound.aspx" />
+    <Content Include="Transaction\Inventory\InventoryAdjustNotStock.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeLocationAllLPN.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeSerialLotExpDate.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeExpDate.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeLot.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeLocation.aspx" />
+    <Content Include="Transaction\Inventory\InventoryAdjustStock.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeSerialLocation.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeSerial.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeSerialStatus.aspx" />
+    <Content Include="Transaction\Inventory\InventoryChangeStatus.aspx" />
+    <Content Include="Transaction\Inventory\InventoryViewer.aspx" />
+    <Content Include="Transaction\Mod\AscxControls\ucInventoryPrint.ascx" />
+    <Content Include="Transaction\Mod\InventoryReprint.aspx" />
+    <Content Include="Transaction\OutbndManifest\OutManifestSimu.aspx" />
+    <Content Include="Transaction\Outbound\AscxControls\OutboundComment.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\OutboundItem.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\PickDetailConfirmPick.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\PickDetailConfirmPickUser.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\PickDetailConfirmShip.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\PickDetailUnPick.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\PickListDetail.ascx" />
+    <Content Include="Transaction\Outbound\AscxControls\ucSerial.ascx" />
+    <Content Include="Transaction\Outbound\Outbound.aspx" />
+    <Content Include="Transaction\Outbound\OutboundByGrp.aspx" />
+    <Content Include="Transaction\Outbound\OutboundReles.aspx" />
+    <Content Include="_css\theme-dark-effect.css" />
+    <Content Include="_css\theme-dark.css" />
+    <Content Include="_css\theme-light-effect.css" />
+    <Content Include="_css\theme-light.css" />
+    <Content Include="_css\theme\red-white\datetimepicker.css" />
+    <Content Include="_css\theme\red-white\loading.css" />
+    <Content Include="_css\theme\red-white\table.css" />
+    <Content Include="_css\theme\red-white\style.css" />
+    <Content Include="_css\theme\red-white\warehouse_virtual.css" />
+    <Content Include="_images\logo.png" />
+    <Content Include="_images\photothumb.db" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\build\css\bootstrap-datetimepicker-standalone.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\build\css\bootstrap-datetimepicker.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\build\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\build\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-192x192.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-36x36.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-48x48.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\android-chrome-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-114x114.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-120x120.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-152x152.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-180x180.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-57x57.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-60x60.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-76x76.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon-precomposed.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\apple-touch-icon.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\browserconfig.xml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Changelog\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\ContributorsGuide\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\css\base.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\css\prettify-1.0.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Events\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Extras\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\FAQ\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\favicon-16x16.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\favicon-32x32.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\favicon-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\favicon.ico" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Functions\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Installing\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\js\base.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\js\prettify-1.0.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\mstile-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\mstile-150x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\mstile-310x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\mstile-310x310.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\mstile-70x70.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\Options\index.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\lunr.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\mustache.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\require.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\search.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\text.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\sitemap.xml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-192x192.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-36x36.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-48x48.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\android-chrome-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-114x114.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-120x120.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-152x152.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-180x180.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-57x57.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-60x60.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-76x76.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon-precomposed.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\apple-touch-icon.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\base.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\browserconfig.xml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\content.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\css\base.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\css\prettify-1.0.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\favicon-16x16.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\favicon-32x32.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\favicon-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\favicon.ico" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\js\base.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\js\prettify-1.0.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\main.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\mstile-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\mstile-150x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\mstile-310x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\mstile-310x310.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\mstile-70x70.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\nav.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\toc.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\Gruntfile.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-192x192.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-36x36.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-48x48.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\android-chrome-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-114x114.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-120x120.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-152x152.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-180x180.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-57x57.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-60x60.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-72x72.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-76x76.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon-precomposed.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\apple-touch-icon.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\base.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\browserconfig.xml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\content.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\css\base.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\css\prettify-1.0.css" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\favicon-16x16.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\favicon-32x32.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\favicon-96x96.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\favicon.ico" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\js\base.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\js\prettify-1.0.min.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\main.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\mstile-144x144.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\mstile-150x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\mstile-310x150.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\mstile-310x310.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\mstile-70x70.png" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\nav.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\toc.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\js\bootstrap-datetimepicker.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\tasks\bump_version.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\publicApiSpec.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\base.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\compile.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\index.js" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\t1.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\t2.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\t3.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\t4.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\t5.html" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\timezoneDataHelper.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2-bootstrap.css" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2-spinner.gif" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2.css" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2.min.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2.png" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2x2.png" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ar.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_bg.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ca.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_cs.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_da.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_de.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_el.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_es.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_et.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_eu.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_fa.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_fi.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_fr.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_gl.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_he.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_hr.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_hu.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_id.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_is.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_it.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ja.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ko.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_lt.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_lv.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_mk.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ms.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_nl.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_no.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_pl.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_pt-BR.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_pt-PT.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ro.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ru.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_sk.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_sv.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_th.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_tr.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_ua.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_vi.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_zh-CN.js" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_zh-TW.js" />
+    <Content Include="_plugin\chart\Chart.js" />
+    <Content Include="_plugin\chart\Chart.min.js" />
+    <Content Include="_plugin\chart\chartjs-plugin-labels.js" />
+    <Content Include="_plugin\chart\utils.js" />
+    <Content Include="_plugin\datepicker-th.js" />
+    <Content Include="_scripts\checkBox.js" />
+    <Content Include="_scripts\ctrlDropdownManual.js" />
+    <Content Include="_scripts\ctrlDropdownSearch.js" />
+    <Content Include="_scripts\gridviewscroll.js" />
+    <Content Include="_scripts\gridviewScroll.min.js" />
+    <Content Include="_scripts\jquery-1.9.1.js" />
+    <Content Include="_scripts\jquery.inputmask.bundle.js" />
+    <Content Include="_scripts\teeViewCheckBox.js" />
+    <Content Include="_theme\css\font-awesome.css.map" />
+    <Content Include="_theme\fonts\black-panther.ttf" />
+    <Content Include="_theme\fonts\fontawesome-webfont.eot" />
+    <Content Include="_theme\fonts\fontawesome-webfont.ttf" />
+    <Content Include="_theme\fonts\fontawesome-webfont.woff" />
+    <Content Include="_theme\fonts\fontawesome-webfont.woff2" />
+    <Content Include="_theme\fonts\FontAwesome.otf" />
+    <Content Include="_theme\fonts\Simple-Line-Icons.eot" />
+    <Content Include="_theme\fonts\Simple-Line-Icons.ttf" />
+    <Content Include="_theme\fonts\Simple-Line-Icons.woff" />
+    <Content Include="_theme\fonts\Simple-Line-Icons.woff2" />
+    <Content Include="_theme\img\photothumb.db" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\.gitattributes" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\.gitignore" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\.jscs.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\.npmignore" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\.travis.yml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\bower.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\component.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\composer.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\CONTRIBUTING.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\manifest.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\search-results-template.mustache" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\search\search_index.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\docs\theme\manifest.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\ISSUE_TEMPLATE" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\LICENSE" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\mkdocs.yml" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\package.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\PULL_REQUEST_TEMPLATE" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\README.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\ChangeLog.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\ContributorsGuide.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Events.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Extras.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\FAQ.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Functions.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\index.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Installing.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Options.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\theme\manifest.json" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Version 4 Changelog.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\docs\Version 4 Contributors guide.md" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\less\bootstrap-datetimepicker-build.less" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\less\_bootstrap-datetimepicker.less" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\sass\bootstrap-datetimepicker-build.scss" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\src\sass\_bootstrap-datetimepicker.scss" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\out\.gitignore" />
+    <Content Include="_plugin\bootstrap-datetimepicker-master\test\screen-capture\pic\.gitignore" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\bower.json" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\LICENSE" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\README.md" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\release.sh" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2.jquery.json" />
+    <Content Include="_plugin\bootstrap-dropdown-2-3.4.4\select2_locale_en.js.template" />
+    <Content Include="_theme\fonts\SB-Modern.ttf" />
+    <Content Include="_theme\fonts\supermarket.ttf" />
+    <Content Include="_theme\fonts\Azonix.otf" />
+    <Content Include="_theme\fonts\ZELDA_Free.ttf" />
+    <Content Include="_UControls\UploadFileEx.ashx" />
+    <Content Include="WebPrint\PrintRPTHandler.ashx" />
+    <Content Include="WebPrint\WebClientPrintAPI.ashx" />
+    <Content Include="WebPrint\AddOn\wcpp-5.0.20.127.msi" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="_css\boostrap-icon.css" />
+    <Content Include="_css\bootstrap.css" />
+    <Content Include="_css\loading.css" />
+    <Content Include="_css\pace-indicator.css" />
+    <Content Include="_css\pace.css" />
+    <Content Include="_css\theme.css" />
+    <Content Include="_css\ucontrol-filter.css" />
+    <Content Include="_images\boostrapicon\glyphicons-halflings-white.png" />
+    <Content Include="_images\boostrapicon\glyphicons-halflings.png" />
+    <Content Include="_images\image_thumb.png" />
+    <Content Include="_images\_logo.png" />
+    <Content Include="_plugin\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-borderless.min.css" />
+    <Content Include="_plugin\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-light.min.css" />
+    <Content Include="_plugin\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-noir.min.css" />
+    <Content Include="_plugin\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-punk.min.css" />
+    <Content Include="_plugin\tooltipster\css\plugins\tooltipster\sideTip\themes\tooltipster-sideTip-shadow.min.css" />
+    <Content Include="_plugin\tooltipster\css\tooltipster.bundle.css" />
+    <Content Include="_plugin\tooltipster\css\tooltipster.bundle.min.css" />
+    <Content Include="_plugin\tooltipster\css\tooltipster.main.css" />
+    <Content Include="_plugin\tooltipster\css\tooltipster.main.min.css" />
+    <Content Include="_plugin\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.js" />
+    <Content Include="_plugin\tooltipster\js\plugins\tooltipster\SVG\tooltipster-SVG.min.js" />
+    <Content Include="_plugin\tooltipster\js\tooltipster.bundle.js" />
+    <Content Include="_plugin\tooltipster\js\tooltipster.bundle.min.js" />
+    <Content Include="_plugin\tooltipster\js\tooltipster.main.js" />
+    <Content Include="_plugin\tooltipster\js\tooltipster.main.min.js" />
+    <Content Include="_scriptsAng\app.js" />
+    <Content Include="_scriptsAng\controllers\carDashboardCtrl.js" />
+    <Content Include="_scriptsAng\services\carDashboardSvc.js" />
+    <Content Include="_scripts\angular-1.6.4.js" />
+    <Content Include="_scripts\angular-animate.js" />
+    <Content Include="_scripts\angular-animate.min.js" />
+    <Content Include="_scripts\angular.js" />
+    <Content Include="_scripts\bootstrap.min.js" />
+    <Content Include="_scripts\gridCheckBox.js" />
+    <Content Include="_scripts\gridHeaderFilter.js" />
+    <Content Include="_scripts\jquery-1.6.4.min.js" />
+    <Content Include="_scripts\jquery-ui-1.10.3.custom.min.js" />
+    <Content Include="_scripts\jquery.min.js" />
+    <Content Include="_scripts\jquery.signalR-2.2.2.js" />
+    <Content Include="_scripts\jquery.signalR-2.3.0.js" />
+    <Content Include="_scripts\moment.js" />
+    <Content Include="_scripts\ng-infinite-scroll.js" />
+    <Content Include="_scripts\pace.min.js" />
+    <Content Include="_scripts\tether.min.js" />
+    <Content Include="_scripts\utility.js" />
+    <Content Include="_scripts\validator.js" />
+    <Content Include="_theme\css\font-awesome.css" />
+    <Content Include="_theme\css\font-awesome.min.css" />
+    <Content Include="_theme\css\simple-line-icons.css" />
+    <Content Include="_theme\css\style-table.css" />
+    <Content Include="_theme\css\style.css" />
+    <Content Include="_theme\css\style_.css" />
+    <Content Include="_theme\fonts\fontawesome-webfont.svg" />
+    <Content Include="_theme\fonts\Simple-Line-Icons.svg" />
+    <Content Include="_theme\gulpfile.js" />
+    <Content Include="_theme\img\favicon.png" />
+    <Content Include="_theme\img\logo.png" />
+    <Content Include="_theme\img\logo_only.png" />
+    <Content Include="_theme\js\app.js" />
+    <Content Include="_theme\js\views\charts.js" />
+    <Content Include="_theme\js\views\main.js" />
+    <Content Include="_theme\js\views\widgets.js" />
+    <Content Include="_UControls\ButtonExt.ascx" />
+    <Content Include="_UControls\CallBackHandler.ascx" />
+    <Content Include="_UControls\EntityCustomContent.ascx" />
+    <Content Include="_UControls\GridColumnExt.ascx" />
+    <Content Include="_UControls\GridColumnGroup.ascx" />
+    <Content Include="_UControls\GridViewExt.ascx" />
+    <Content Include="_UControls\InputControls\BaseInputControl.ascx" />
+    <Content Include="_UControls\InputControls\FilterStip.ascx" />
+    <Content Include="_UControls\InputControls\InputCheckBox.ascx" />
+    <Content Include="_UControls\InputControls\InputDropDown.ascx" />
+    <Content Include="_UControls\InputControls\InputDropDownHD.ascx" />
+    <Content Include="_UControls\InputControls\InputHidden.ascx" />
+    <Content Include="_UControls\InputControls\InputTextBox.ascx" />
+    <Content Include="_UControls\InputControls\InputTextDate.ascx" />
+    <Content Include="_UControls\InputControls\InputTextInteger.ascx" />
+    <Content Include="_UControls\InputControls\InputTextNumber.ascx" />
+    <Content Include="_UControls\LabelExt.ascx" />
+    <Content Include="_UControls\PagerGridViewExt.ascx" />
+    <Content Include="_UControls\PanelPopup.ascx" />
+    <Content Include="_UControls\PanelPopupEntity.ascx" />
+    <Content Include="_UControls\PanelTab.ascx" />
+    <Content Include="_UControls\ucLoading.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucInboundDetail.ascx.cs">
+      <DependentUpon>ucInboundDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucInboundDetail.ascx.designer.cs">
+      <DependentUpon>ucInboundDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucM3ReceiptDetail.ascx.cs">
+      <DependentUpon>ucM3ReceiptDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucM3ReceiptDetail.ascx.designer.cs">
+      <DependentUpon>ucM3ReceiptDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucOutboundDetail.ascx.cs">
+      <DependentUpon>ucOutboundDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucOutboundDetail.ascx.designer.cs">
+      <DependentUpon>ucOutboundDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucReceiptDetail.ascx.cs">
+      <DependentUpon>ucReceiptDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucReceiptDetail.ascx.designer.cs">
+      <DependentUpon>ucReceiptDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipDetail.ascx.cs">
+      <DependentUpon>ucShipDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipDetail.ascx.designer.cs">
+      <DependentUpon>ucShipDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipNotPODetail.ascx.cs">
+      <DependentUpon>ucShipNotPODetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipNotPODetail.ascx.designer.cs">
+      <DependentUpon>ucShipNotPODetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipPODetail.ascx.cs">
+      <DependentUpon>ucShipPODetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\AscxControls\InterfaceMonitor\ucShipPODetail.ascx.designer.cs">
+      <DependentUpon>ucShipPODetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\InterfaceMonitor.aspx.cs">
+      <DependentUpon>InterfaceMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\InterfaceMonitor.aspx.designer.cs">
+      <DependentUpon>InterfaceMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\InterfaceMonitor2.aspx.cs">
+      <DependentUpon>InterfaceMonitor2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\InterfaceMonitor2.aspx.designer.cs">
+      <DependentUpon>InterfaceMonitor2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\InterfaceSAPHana.aspx.cs">
+      <DependentUpon>InterfaceSAPHana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\InterfaceSAPHana.aspx.designer.cs">
+      <DependentUpon>InterfaceSAPHana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administrator\TransactionLog.aspx.cs">
+      <DependentUpon>TransactionLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\TransactionLog.aspx.designer.cs">
+      <DependentUpon>TransactionLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\AscxControls\ucResource.ascx.cs">
+      <DependentUpon>ucResource.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\AscxControls\ucResource.ascx.designer.cs">
+      <DependentUpon>ucResource.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\AssignMenu.aspx.cs">
+      <DependentUpon>AssignMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\AssignMenu.aspx.designer.cs">
+      <DependentUpon>AssignMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\User.aspx.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\User.aspx.designer.cs">
+      <DependentUpon>User.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\UserGroup.aspx.cs">
+      <DependentUpon>UserGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\UserGroup.aspx.designer.cs">
+      <DependentUpon>UserGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Authen\UserLogon.aspx.cs">
+      <DependentUpon>UserLogon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authen\UserLogon.aspx.designer.cs">
+      <DependentUpon>UserLogon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.aspx.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePass.aspx.designer.cs">
+      <DependentUpon>ChangePass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\AscxControls\ucResourceDetail.ascx.cs">
+      <DependentUpon>ucResourceDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\AscxControls\ucResourceDetail.ascx.designer.cs">
+      <DependentUpon>ucResourceDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Printer\PrinterMapping.aspx.cs">
+      <DependentUpon>PrinterMapping.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Printer\PrinterMapping.aspx.designer.cs">
+      <DependentUpon>PrinterMapping.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Printer\PrinterGroup.aspx.cs">
+      <DependentUpon>PrinterGroup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Printer\PrinterGroup.aspx.designer.cs">
+      <DependentUpon>PrinterGroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Printer\Printer.aspx.cs">
+      <DependentUpon>Printer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Printer\Printer.aspx.designer.cs">
+      <DependentUpon>Printer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\ResourceMaster.aspx.cs">
+      <DependentUpon>ResourceMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\ResourceMaster.aspx.designer.cs">
+      <DependentUpon>ResourceMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\Rule.aspx.cs">
+      <DependentUpon>Rule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\Rule.aspx.designer.cs">
+      <DependentUpon>Rule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Configuration\ComboBox.aspx.cs">
+      <DependentUpon>ComboBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Configuration\ComboBox.aspx.designer.cs">
+      <DependentUpon>ComboBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\AscxControls\ucWarehouseVirtualDetail.ascx.cs">
+      <DependentUpon>ucWarehouseVirtualDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\AscxControls\ucWarehouseVirtualDetail.ascx.designer.cs">
+      <DependentUpon>ucWarehouseVirtualDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\DBoardCenter.aspx.cs">
+      <DependentUpon>DBoardCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\DBoardCenter.aspx.designer.cs">
+      <DependentUpon>DBoardCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\WarehouseVirtual.aspx.cs">
+      <DependentUpon>WarehouseVirtual.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DashBoard\WarehouseVirtual.aspx.designer.cs">
+      <DependentUpon>WarehouseVirtual.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export\InboundDetail.aspx.cs">
+      <DependentUpon>InboundDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export\InboundDetail.aspx.designer.cs">
+      <DependentUpon>InboundDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export\InventoryAdjust.aspx.cs">
+      <DependentUpon>InventoryAdjust.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export\InventoryAdjust.aspx.designer.cs">
+      <DependentUpon>InventoryAdjust.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export\LabelPrinted.aspx.cs">
+      <DependentUpon>LabelPrinted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export\LabelPrinted.aspx.designer.cs">
+      <DependentUpon>LabelPrinted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export\OutboundDetail.aspx.cs">
+      <DependentUpon>OutboundDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export\OutboundDetail.aspx.designer.cs">
+      <DependentUpon>OutboundDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Export\OutboundMaster.aspx.cs">
+      <DependentUpon>OutboundMaster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Export\OutboundMaster.aspx.designer.cs">
+      <DependentUpon>OutboundMaster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Layout.Master.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Layout.Master.designer.cs">
+      <DependentUpon>Layout.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\BOMAgenDetail.ascx.cs">
+      <DependentUpon>BOMAgenDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\BOMAgenDetail.ascx.designer.cs">
+      <DependentUpon>BOMAgenDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemCrossRef.ascx.cs">
+      <DependentUpon>ItemCrossRef.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemCrossRef.ascx.designer.cs">
+      <DependentUpon>ItemCrossRef.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemPickface.ascx.cs">
+      <DependentUpon>ItemPickface.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemPickface.ascx.designer.cs">
+      <DependentUpon>ItemPickface.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemUom.ascx.cs">
+      <DependentUpon>ItemUom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\ItemUom.ascx.designer.cs">
+      <DependentUpon>ItemUom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\SubCategory.ascx.cs">
+      <DependentUpon>SubCategory.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\AscxControls\SubCategory.ascx.designer.cs">
+      <DependentUpon>SubCategory.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Bom.aspx.cs">
+      <DependentUpon>Bom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Bom.aspx.designer.cs">
+      <DependentUpon>Bom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\ItemPickface.aspx.cs">
+      <DependentUpon>ItemPickface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\ItemPickface.aspx.designer.cs">
+      <DependentUpon>ItemPickface.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\LocationCategory.aspx.cs">
+      <DependentUpon>LocationCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\LocationCategory.aspx.designer.cs">
+      <DependentUpon>LocationCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\CustomerLocation.aspx.cs">
+      <DependentUpon>CustomerLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\CustomerLocation.aspx.designer.cs">
+      <DependentUpon>CustomerLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\LocationItem.aspx.cs">
+      <DependentUpon>LocationItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\LocationItem.aspx.designer.cs">
+      <DependentUpon>LocationItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\WarehouseItem.aspx.cs">
+      <DependentUpon>WarehouseItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\WarehouseItem.aspx.designer.cs">
+      <DependentUpon>WarehouseItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\ZoneCategory.aspx.cs">
+      <DependentUpon>ZoneCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\ZoneCategory.aspx.designer.cs">
+      <DependentUpon>ZoneCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\ZoneLocation.aspx.cs">
+      <DependentUpon>ZoneLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\ZoneLocation.aspx.designer.cs">
+      <DependentUpon>ZoneLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\ModernTrade\ItemShelfLife.aspx.cs">
+      <DependentUpon>ItemShelfLife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\ModernTrade\ItemShelfLife.aspx.designer.cs">
+      <DependentUpon>ItemShelfLife.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\ProductionLine.aspx.cs">
+      <DependentUpon>ProductionLine.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\ProductionLine.aspx.designer.cs">
+      <DependentUpon>ProductionLine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Transportation\Carrier.aspx.cs">
+      <DependentUpon>Carrier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Transportation\Carrier.aspx.designer.cs">
+      <DependentUpon>Carrier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Customer.aspx.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Customer.aspx.designer.cs">
+      <DependentUpon>Customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Equipment.aspx.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Equipment.aspx.designer.cs">
+      <DependentUpon>Equipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Item.aspx.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Item.aspx.designer.cs">
+      <DependentUpon>Item.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\ItemCategory.aspx.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\ItemCategory.aspx.designer.cs">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Location.aspx.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Location.aspx.designer.cs">
+      <DependentUpon>Location.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\UserOwner.aspx.cs">
+      <DependentUpon>UserOwner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\UserOwner.aspx.designer.cs">
+      <DependentUpon>UserOwner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Mapping\UserWarehouse.aspx.cs">
+      <DependentUpon>UserWarehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Mapping\UserWarehouse.aspx.designer.cs">
+      <DependentUpon>UserWarehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Owner.aspx.cs">
+      <DependentUpon>Owner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Owner.aspx.designer.cs">
+      <DependentUpon>Owner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Reason.aspx.cs">
+      <DependentUpon>Reason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Reason.aspx.designer.cs">
+      <DependentUpon>Reason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Supplier.aspx.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Supplier.aspx.designer.cs">
+      <DependentUpon>Supplier.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Transportation\Truck.aspx.cs">
+      <DependentUpon>Truck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Transportation\Truck.aspx.designer.cs">
+      <DependentUpon>Truck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Transportation\TruckType.aspx.cs">
+      <DependentUpon>TruckType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Transportation\TruckType.aspx.designer.cs">
+      <DependentUpon>TruckType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Warehouse.aspx.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Warehouse.aspx.designer.cs">
+      <DependentUpon>Warehouse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterData\Zone.aspx.cs">
+      <DependentUpon>Zone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterData\Zone.aspx.designer.cs">
+      <DependentUpon>Zone.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transaction\Inventory\ReportIssue.aspx.cs">
+      <DependentUpon>ReportIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\ReportIssue.aspx.designer.cs">
+      <DependentUpon>ReportIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AscxControls\ucReportStockCard.ascx.cs">
+      <DependentUpon>ucReportStockCard.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AscxControls\ucReportStockCard.ascx.designer.cs">
+      <DependentUpon>ucReportStockCard.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\AscxControls\ucReportViewer.ascx.cs">
+      <DependentUpon>ucReportViewer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\AscxControls\ucReportViewer.ascx.designer.cs">
+      <DependentUpon>ucReportViewer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\CancelReplenishment.aspx.cs">
+      <DependentUpon>CancelReplenishment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\CancelReplenishment.aspx.designer.cs">
+      <DependentUpon>CancelReplenishment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Count\CountPlanExt.aspx.cs">
+      <DependentUpon>CountPlanExt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Count\CountPlanExt.aspx.designer.cs">
+      <DependentUpon>CountPlanExt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Count\CountPlan.aspx.cs">
+      <DependentUpon>CountPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Count\CountPlan.aspx.designer.cs">
+      <DependentUpon>CountPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Count\CountReconcilExt.aspx.cs">
+      <DependentUpon>CountReconcilExt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Count\CountReconcilExt.aspx.designer.cs">
+      <DependentUpon>CountReconcilExt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Count\CountReconcil.aspx.cs">
+      <DependentUpon>CountReconcil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Count\CountReconcil.aspx.designer.cs">
+      <DependentUpon>CountReconcil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundCancelPalletDetail.ascx.cs">
+      <DependentUpon>ucInboundCancelPalletDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundCancelPalletDetail.ascx.designer.cs">
+      <DependentUpon>ucInboundCancelPalletDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundDetail.ascx.cs">
+      <DependentUpon>ucInboundDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundDetail.ascx.designer.cs">
+      <DependentUpon>ucInboundDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrint144.ascx.cs">
+      <DependentUpon>ucInboundPrint144.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrint144.ascx.designer.cs">
+      <DependentUpon>ucInboundPrint144.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrint.ascx.cs">
+      <DependentUpon>ucInboundPrint.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrint.ascx.designer.cs">
+      <DependentUpon>ucInboundPrint.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrintLabelDetail.ascx.cs">
+      <DependentUpon>ucInboundPrintLabelDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundPrintLabelDetail.ascx.designer.cs">
+      <DependentUpon>ucInboundPrintLabelDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundReceipt.ascx.cs">
+      <DependentUpon>ucInboundReceipt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucInboundReceipt.ascx.designer.cs">
+      <DependentUpon>ucInboundReceipt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucReceiptDetail.ascx.cs">
+      <DependentUpon>ucReceiptDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucReceiptDetail.ascx.designer.cs">
+      <DependentUpon>ucReceiptDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucReceivePartial.ascx.cs">
+      <DependentUpon>ucReceivePartial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\AscxControl\ucReceivePartial.ascx.designer.cs">
+      <DependentUpon>ucReceivePartial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\Inbound.aspx.cs">
+      <DependentUpon>Inbound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\Inbound.aspx.designer.cs">
+      <DependentUpon>Inbound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\InboundCancelPallet.aspx.cs">
+      <DependentUpon>InboundCancelPallet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\InboundCancelPallet.aspx.designer.cs">
+      <DependentUpon>InboundCancelPallet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inbound\InboundPrintLabel.aspx.cs">
+      <DependentUpon>InboundPrintLabel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inbound\InboundPrintLabel.aspx.designer.cs">
+      <DependentUpon>InboundPrintLabel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryAdjustNotStock.aspx.cs">
+      <DependentUpon>InventoryAdjustNotStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryAdjustNotStock.aspx.designer.cs">
+      <DependentUpon>InventoryAdjustNotStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLocationAllLPN.aspx.cs">
+      <DependentUpon>InventoryChangeLocationAllLPN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLocationAllLPN.aspx.designer.cs">
+      <DependentUpon>InventoryChangeLocationAllLPN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialLotExpDate.aspx.cs">
+      <DependentUpon>InventoryChangeSerialLotExpDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialLotExpDate.aspx.designer.cs">
+      <DependentUpon>InventoryChangeSerialLotExpDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeExpDate.aspx.cs">
+      <DependentUpon>InventoryChangeExpDate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeExpDate.aspx.designer.cs">
+      <DependentUpon>InventoryChangeExpDate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLot.aspx.cs">
+      <DependentUpon>InventoryChangeLot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLot.aspx.designer.cs">
+      <DependentUpon>InventoryChangeLot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLocation.aspx.cs">
+      <DependentUpon>InventoryChangeLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeLocation.aspx.designer.cs">
+      <DependentUpon>InventoryChangeLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryAdjustStock.aspx.cs">
+      <DependentUpon>InventoryAdjustStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryAdjustStock.aspx.designer.cs">
+      <DependentUpon>InventoryAdjustStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialLocation.aspx.cs">
+      <DependentUpon>InventoryChangeSerialLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialLocation.aspx.designer.cs">
+      <DependentUpon>InventoryChangeSerialLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerial.aspx.cs">
+      <DependentUpon>InventoryChangeSerial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerial.aspx.designer.cs">
+      <DependentUpon>InventoryChangeSerial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialStatus.aspx.cs">
+      <DependentUpon>InventoryChangeSerialStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeSerialStatus.aspx.designer.cs">
+      <DependentUpon>InventoryChangeSerialStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeStatus.aspx.cs">
+      <DependentUpon>InventoryChangeStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryChangeStatus.aspx.designer.cs">
+      <DependentUpon>InventoryChangeStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryCompare.aspx.cs">
+      <DependentUpon>InventoryCompare.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryCompare.aspx.designer.cs">
+      <DependentUpon>InventoryCompare.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryOutboundAllocate.aspx.cs">
+      <DependentUpon>InventoryOutboundAllocate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryOutboundAllocate.aspx.designer.cs">
+      <DependentUpon>InventoryOutboundAllocate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryViewer.aspx.cs">
+      <DependentUpon>InventoryViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Inventory\InventoryViewer.aspx.designer.cs">
+      <DependentUpon>InventoryViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Mod\AscxControls\ucInventoryPrint.ascx.cs">
+      <DependentUpon>ucInventoryPrint.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Mod\AscxControls\ucInventoryPrint.ascx.designer.cs">
+      <DependentUpon>ucInventoryPrint.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Mod\InventoryReprint.aspx.cs">
+      <DependentUpon>InventoryReprint.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Mod\InventoryReprint.aspx.designer.cs">
+      <DependentUpon>InventoryReprint.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\OutbndManifest\OutManifestSimu.aspx.cs">
+      <DependentUpon>OutManifestSimu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\OutbndManifest\OutManifestSimu.aspx.designer.cs">
+      <DependentUpon>OutManifestSimu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\AssignOrderDetail.ascx.cs">
+      <DependentUpon>AssignOrderDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\AssignOrderDetail.ascx.designer.cs">
+      <DependentUpon>AssignOrderDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\AssignOrderUncheck.ascx.cs">
+      <DependentUpon>AssignOrderUncheck.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\AssignOrderUncheck.ascx.designer.cs">
+      <DependentUpon>AssignOrderUncheck.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\OutboundComment.ascx.cs">
+      <DependentUpon>OutboundComment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\OutboundComment.ascx.designer.cs">
+      <DependentUpon>OutboundComment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\OutboundItem.ascx.cs">
+      <DependentUpon>OutboundItem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\OutboundItem.ascx.designer.cs">
+      <DependentUpon>OutboundItem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmPick.ascx.cs">
+      <DependentUpon>PickDetailConfirmPick.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmPick.ascx.designer.cs">
+      <DependentUpon>PickDetailConfirmPick.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmPickUser.ascx.cs">
+      <DependentUpon>PickDetailConfirmPickUser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmPickUser.ascx.designer.cs">
+      <DependentUpon>PickDetailConfirmPickUser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmShip.ascx.cs">
+      <DependentUpon>PickDetailConfirmShip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailConfirmShip.ascx.designer.cs">
+      <DependentUpon>PickDetailConfirmShip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailUnPick.ascx.cs">
+      <DependentUpon>PickDetailUnPick.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickDetailUnPick.ascx.designer.cs">
+      <DependentUpon>PickDetailUnPick.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickListDetail.ascx.cs">
+      <DependentUpon>PickListDetail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\PickListDetail.ascx.designer.cs">
+      <DependentUpon>PickListDetail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\ucSerial.ascx.cs">
+      <DependentUpon>ucSerial.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AscxControls\ucSerial.ascx.designer.cs">
+      <DependentUpon>ucSerial.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AssignOrder.aspx.cs">
+      <DependentUpon>AssignOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\AssignOrder.aspx.designer.cs">
+      <DependentUpon>AssignOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\CarRegister.aspx.cs">
+      <DependentUpon>CarRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\CarRegister.aspx.designer.cs">
+      <DependentUpon>CarRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\Outbound.aspx.cs">
+      <DependentUpon>Outbound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\Outbound.aspx.designer.cs">
+      <DependentUpon>Outbound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\OutboundByGrp.aspx.cs">
+      <DependentUpon>OutboundByGrp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\OutboundByGrp.aspx.designer.cs">
+      <DependentUpon>OutboundByGrp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Outbound\OutboundReles.aspx.cs">
+      <DependentUpon>OutboundReles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transaction\Outbound\OutboundReles.aspx.designer.cs">
+      <DependentUpon>OutboundReles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPrint\PrintRPTHandler.ashx.cs">
+      <DependentUpon>PrintRPTHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPrint\WebClientPrintAPI.ashx.cs">
+      <DependentUpon>WebClientPrintAPI.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_ExtensionClass\ClientScriptExt.cs" />
+    <Compile Include="_ExtensionClass\clsResouce.cs" />
+    <Compile Include="_ExtensionClass\ExportExcel_EPPlus.cs" />
+    <Compile Include="_ExtensionClass\Extensions.cs" />
+    <Compile Include="_ExtensionClass\FieldsStatic.cs" />
+    <Compile Include="_ExtensionClass\HttpClientExtension.cs" />
+    <Compile Include="_ExtensionClass\ImportExcel.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_ExtensionClass\PageCustom.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_ExtensionClass\PageGlobal.cs" />
+    <Compile Include="_ExtensionClass\ResourceAutoLink.cs" />
+    <Compile Include="_ExtensionClass\TransactionStatus.cs" />
+    <Compile Include="_ExtensionClass\ViewStateCompression.cs" />
+    <Compile Include="_UControls\ButtonExt.ascx.cs">
+      <DependentUpon>ButtonExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\ButtonExt.ascx.designer.cs">
+      <DependentUpon>ButtonExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\CallBackHandler.ascx.cs">
+      <DependentUpon>CallBackHandler.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\CallBackHandler.ascx.designer.cs">
+      <DependentUpon>CallBackHandler.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\DataPagerExt.cs" />
+    <Compile Include="_UControls\EntityControlExtend.cs" />
+    <Compile Include="_UControls\EntityCustomContent.ascx.cs">
+      <DependentUpon>EntityCustomContent.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\EntityCustomContent.ascx.designer.cs">
+      <DependentUpon>EntityCustomContent.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\EntityCustomField.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\GridColumnExt.ascx.cs">
+      <DependentUpon>GridColumnExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\GridColumnExt.ascx.designer.cs">
+      <DependentUpon>GridColumnExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\GridColumnExtLite.cs" />
+    <Compile Include="_UControls\GridColumnGroup.ascx.cs">
+      <DependentUpon>GridColumnGroup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\GridColumnGroup.ascx.designer.cs">
+      <DependentUpon>GridColumnGroup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\GridCustomField.cs" />
+    <Compile Include="_UControls\GridViewExt.ascx.cs">
+      <DependentUpon>GridViewExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\GridViewExt.ascx.designer.cs">
+      <DependentUpon>GridViewExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\IGridColumnExt.cs" />
+    <Compile Include="_UControls\IGridColumnGroup.cs" />
+    <Compile Include="_UControls\InputControls\BaseInputControl.ascx.cs">
+      <DependentUpon>BaseInputControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\BaseInputControl.ascx.designer.cs">
+      <DependentUpon>BaseInputControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\FilterStip.ascx.cs">
+      <DependentUpon>FilterStip.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\FilterStip.ascx.designer.cs">
+      <DependentUpon>FilterStip.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputCheckBox.ascx.cs">
+      <DependentUpon>InputCheckBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputCheckBox.ascx.designer.cs">
+      <DependentUpon>InputCheckBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputDropDown.ascx.cs">
+      <DependentUpon>InputDropDown.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputDropDown.ascx.designer.cs">
+      <DependentUpon>InputDropDown.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputDropDownHD.ascx.cs">
+      <DependentUpon>InputDropDownHD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputDropDownHD.ascx.designer.cs">
+      <DependentUpon>InputDropDownHD.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputHidden.ascx.cs">
+      <DependentUpon>InputHidden.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputHidden.ascx.designer.cs">
+      <DependentUpon>InputHidden.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextBox.ascx.cs">
+      <DependentUpon>InputTextBox.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextBox.ascx.designer.cs">
+      <DependentUpon>InputTextBox.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextDate.ascx.cs">
+      <DependentUpon>InputTextDate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextDate.ascx.designer.cs">
+      <DependentUpon>InputTextDate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextInteger.ascx.cs">
+      <DependentUpon>InputTextInteger.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextInteger.ascx.designer.cs">
+      <DependentUpon>InputTextInteger.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextNumber.ascx.cs">
+      <DependentUpon>InputTextNumber.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\InputControls\InputTextNumber.ascx.designer.cs">
+      <DependentUpon>InputTextNumber.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\InputControls\_IInputControl.cs" />
+    <Compile Include="_UControls\LabelExt.ascx.cs">
+      <DependentUpon>LabelExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\LabelExt.ascx.designer.cs">
+      <DependentUpon>LabelExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\PagerGridViewExt.ascx.cs">
+      <DependentUpon>PagerGridViewExt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\PagerGridViewExt.ascx.designer.cs">
+      <DependentUpon>PagerGridViewExt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\PanelCustom.cs" />
+    <Compile Include="_UControls\PanelPopup.ascx.cs">
+      <DependentUpon>PanelPopup.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\PanelPopup.ascx.designer.cs">
+      <DependentUpon>PanelPopup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\PanelPopupEntity.ascx.cs">
+      <DependentUpon>PanelPopupEntity.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\PanelPopupEntity.ascx.designer.cs">
+      <DependentUpon>PanelPopupEntity.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\PanelTab.ascx.cs">
+      <DependentUpon>PanelTab.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\PanelTab.ascx.designer.cs">
+      <DependentUpon>PanelTab.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\Style\_StyleColor.cs" />
+    <Compile Include="_UControls\Style\_StyleSize.cs" />
+    <Compile Include="_UControls\ucLoading.ascx.cs">
+      <DependentUpon>ucLoading.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\ucLoading.ascx.designer.cs">
+      <DependentUpon>ucLoading.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\UploadFileEx.ascx.cs">
+      <DependentUpon>UploadFileEx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_UControls\UploadFileEx.ascx.designer.cs">
+      <DependentUpon>UploadFileEx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\UploadFileEx.ashx.cs">
+      <DependentUpon>UploadFileEx.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="_UControls\_FormState.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="_temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConfigGlobal\ConfigGlobal.csproj">
+      <Project>{94d6ca30-39d8-4bb1-8329-44893a4a4258}</Project>
+      <Name>ConfigGlobal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Prototype.Providers 2\Prototype.Providers.csproj">
+      <Project>{3b5b4521-5f80-404f-babf-f3095bc11faf}</Project>
+      <Name>Prototype.Providers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityM.Access\SecurityM.Access.csproj">
+      <Project>{045d8a41-2923-454e-ad7d-9b749014ca9d}</Project>
+      <Name>SecurityM.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SecurityM.Source\SecurityM.Source.csproj">
+      <Project>{16791c24-834d-4c87-9587-94520ea77b38}</Project>
+      <Name>SecurityM.Source</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebSecurityApi.DTO\WebSecurityApi.DTO.csproj">
+      <Project>{e276e53b-46bb-4947-a780-e32e7d6ddc67}</Project>
+      <Name>WebSecurityApi.DTO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WMS_NEW.Access\WMS_NEW.Access.csproj">
+      <Project>{1e45d6dc-933d-4f46-84a5-2c225f650480}</Project>
+      <Name>WMS_NEW.Access</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WMS_NEW.Source\WMS_NEW.Source.csproj">
+      <Project>{bef13f85-a16c-4ebe-81ae-857e9e537995}</Project>
+      <Name>WMS_NEW.Source</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <SaveServerSettingsInUserFile>True</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.1\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

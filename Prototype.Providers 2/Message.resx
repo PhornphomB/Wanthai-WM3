@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Message_Concurrency" xml:space="preserve">
+    <value>! Process การทำงานนี้ยังไม่ว่าง กรุณาลองใหม่อีกครั้ง </value>
+  </data>
+  <data name="Message_ControlGetValueFailure" xml:space="preserve">
+    <value>{0} value control getting failured.</value>
+  </data>
+  <data name="Message_ControlSetValueFailure" xml:space="preserve">
+    <value>{0} value control setting failured.</value>
+  </data>
+  <data name="Message_DeleteEngaged" xml:space="preserve">
+    <value>{0} unable to deleting, Because {1} has been engaged.</value>
+  </data>
+  <data name="Message_DeleteFailure" xml:space="preserve">
+    <value>Delete data fail.</value>
+  </data>
+  <data name="Message_DeleteSuccess" xml:space="preserve">
+    <value>Delete data success.</value>
+  </data>
+  <data name="Message_Duplicated" xml:space="preserve">
+    <value>unable to save, Because has been existed keys.</value>
+  </data>
+  <data name="Message_EngagedFailure" xml:space="preserve">
+    <value>Unable to check engaged or casting "{0}" object.</value>
+  </data>
+  <data name="Message_ExistedFailure" xml:space="preserve">
+    <value>Unable to check existed or casting "{0}" object.</value>
+  </data>
+  <data name="Message_GetFailure" xml:space="preserve">
+    <value>Unable to get or casting {0} object.</value>
+  </data>
+  <data name="Message_ListFailure" xml:space="preserve">
+    <value>{0} collection getting failured.</value>
+  </data>
+  <data name="Message_ListResult" xml:space="preserve">
+    <value>Result row(s) : {0} Record(s)</value>
+  </data>
+  <data name="Message_ListSuccess" xml:space="preserve">
+    <value>{0} collection getted successfully.</value>
+  </data>
+  <data name="Message_NoneActiveFailure" xml:space="preserve">
+    <value>Cannot Inactive data, Because this data used by another table.</value>
+  </data>
+  <data name="Message_NotFound" xml:space="preserve">
+    <value>{0} : {1} unable to processing, Because {1} has not found.</value>
+  </data>
+  <data name="Message_PageException" xml:space="preserve">
+    <value>{0} : {1} unable to processing, Because {1} has page exception.</value>
+  </data>
+  <data name="Message_PropertyListFailure" xml:space="preserve">
+    <value>{0} property collection getting failured.</value>
+  </data>
+  <data name="Message_RowAffect" xml:space="preserve">
+    <value>Affected row(s) : {0} Record(s)</value>
+  </data>
+  <data name="Message_RowNoEffect" xml:space="preserve">
+    <value>No row effect for save data.</value>
+  </data>
+  <data name="Message_SaveFailure" xml:space="preserve">
+    <value>{0} : {1} Insert data fail.</value>
+  </data>
+  <data name="Message_SaveSuccess" xml:space="preserve">
+    <value>Insert data success.</value>
+  </data>
+  <data name="Message_StringEmpty" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Message_StringNothing" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Message_TryOrContact" xml:space="preserve">
+    <value>Please try again or Contact administrators.</value>
+  </data>
+  <data name="Message_UpdateEngaged" xml:space="preserve">
+    <value>{0} : {1} unable to updating, Because {1} has been engaged.</value>
+  </data>
+  <data name="Message_UpdateFailure" xml:space="preserve">
+    <value>{0} : {1} Update data fail.</value>
+  </data>
+  <data name="Message_UpdateSuccess" xml:space="preserve">
+    <value>Update data success.</value>
+  </data>
+  <data name="Message_ValueNotNull" xml:space="preserve">
+    <value />
+  </data>
+</root>

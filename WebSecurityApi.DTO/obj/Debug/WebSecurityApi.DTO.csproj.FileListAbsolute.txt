@@ -1,0 +1,12 @@
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\bin\Debug\WebSecurityApi.DTO.dll
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\bin\Debug\WebSecurityApi.DTO.pdb
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.csproj.CoreCompileInputs.cache
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.dll
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.pdb
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\bin\Debug\WebSecurityApi.DTO.dll
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\bin\Debug\WebSecurityApi.DTO.pdb
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.csproj.AssemblyReference.cache
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.csproj.CoreCompileInputs.cache
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.dll
+D:\Program\Wanthai-WM3\WebSecurityApi.DTO\obj\Debug\WebSecurityApi.DTO.pdb

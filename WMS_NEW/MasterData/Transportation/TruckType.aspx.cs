@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace WMS_NEW.MasterData.Transportation
+{
+    public partial class TruckType : PageCustom
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+                #region Init PopupEntity 
+
+                var access = new Access.MasterData.Transportation.TruckType();
+                var entity = access.Entity;
+
+                #region Init Controls Entity
+
+                var tabs_attr = new _UControls.EntityTab[]{
+                    new _UControls.EntityTab { TabIndex = 1, TabName = "User Define" },
+                };
+
+
+                #region Binding
+                #endregion
+
+                var override_controls = new List<_UControls.EntityCustom>();
+
+                override_controls.Add(new _UControls.EntityCustom { DataFieldValue = nameof(entity.truck_type), IsKey = true });
+
+                #endregion
+
+
+
+                popupEntity1.InitObjectsEvent += () => { popupEntity1.ObjectDataAccess = access; };
+                popupEntity1.AutoCreateControlEntity(entity, override_controls);
+
+                GridExt1.PopupEntitySource = popupEntity1;
+
+                #endregion
+            }
+            catch (Exception ex)
+            {
+                Logging = new Prototype.Providers.Logging(this, ex);
+                RaiseLogging();
+            }
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+D:\Program\Wan_Thai\Web\ConfigAzureDb\bin\Debug\ConfigAzureDb.dll
+D:\Program\Wan_Thai\Web\ConfigAzureDb\bin\Debug\ConfigAzureDb.pdb
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Debug\ConfigAzureDb.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Debug\ConfigAzureDb.csproj.CoreCompileInputs.cache
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Debug\ConfigAz.DF1FC83D.Up2Date
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Debug\ConfigAzureDb.dll
+D:\Program\Wan_Thai\Web\ConfigAzureDb\obj\Debug\ConfigAzureDb.pdb
+D:\Program\Wanthai-WM3\ConfigAzureDb\bin\Debug\ConfigAzureDb.dll
+D:\Program\Wanthai-WM3\ConfigAzureDb\bin\Debug\ConfigAzureDb.pdb
+D:\Program\Wanthai-WM3\ConfigAzureDb\obj\Debug\ConfigAzureDb.csproj.AssemblyReference.cache
+D:\Program\Wanthai-WM3\ConfigAzureDb\obj\Debug\ConfigAzureDb.csproj.CoreCompileInputs.cache
+D:\Program\Wanthai-WM3\ConfigAzureDb\obj\Debug\ConfigAz.DF1FC83D.Up2Date
+D:\Program\Wanthai-WM3\ConfigAzureDb\obj\Debug\ConfigAzureDb.dll
+D:\Program\Wanthai-WM3\ConfigAzureDb\obj\Debug\ConfigAzureDb.pdb

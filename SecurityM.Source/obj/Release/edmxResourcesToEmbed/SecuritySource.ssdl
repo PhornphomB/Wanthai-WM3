@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SecurityModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="t_com_application">
+    <Key>
+      <PropertyRef Name="app_id" />
+    </Key>
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="application_name" Type="nvarchar" MaxLength="400" />
+    <Property Name="description" Type="nvarchar" MaxLength="400" />
+    <Property Name="license_type" Type="nvarchar" MaxLength="40" />
+    <Property Name="number_of_users" Type="nvarchar" MaxLength="200" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="app_version" Type="nvarchar" MaxLength="120" />
+    <Property Name="date_installed" Type="nvarchar" MaxLength="200" />
+    <Property Name="expiry_date" Type="nvarchar" MaxLength="200" />
+    <Property Name="maintenance_support_date" Type="nvarchar" MaxLength="200" />
+    <Property Name="db_server_name" Type="nvarchar" MaxLength="400" />
+    <Property Name="db_name" Type="nvarchar" MaxLength="400" />
+    <Property Name="db_user" Type="nvarchar" MaxLength="100" />
+    <Property Name="db_password" Type="nvarchar" MaxLength="100" />
+    <Property Name="db_connectionstring" Type="nvarchar" MaxLength="2000" />
+    <Property Name="environment" Type="nvarchar" MaxLength="200" />
+    <Property Name="security_mode" Type="nvarchar" MaxLength="400" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="use_expirydate" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="t_com_config">
+    <Key>
+      <PropertyRef Name="config_id" />
+    </Key>
+    <Property Name="config_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="platform" Type="varchar" MaxLength="10" />
+    <Property Name="config_code" Type="varchar" MaxLength="40" />
+    <Property Name="value" Type="nvarchar" MaxLength="120" />
+    <Property Name="sequence" Type="int" Nullable="false" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="t_com_locale">
+    <Key>
+      <PropertyRef Name="locale_id" />
+    </Key>
+    <Property Name="locale_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="description" Type="nvarchar" MaxLength="400" />
+    <Property Name="locale" Type="varchar" MaxLength="40" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_menu">
+    <Key>
+      <PropertyRef Name="menu_id" />
+    </Key>
+    <Property Name="menu_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" />
+    <Property Name="platform" Type="nvarchar" MaxLength="120" />
+    <Property Name="menu_group" Type="nvarchar" MaxLength="200" />
+    <Property Name="menu_group_sequence" Type="int" />
+    <Property Name="parent_menu_id" Type="varchar" MaxLength="40" />
+    <Property Name="menu_name" Type="nvarchar" MaxLength="200" />
+    <Property Name="menu_sequence" Type="int" Nullable="false" />
+    <Property Name="process" Type="nvarchar" MaxLength="800" />
+    <Property Name="resource_master_id" Type="varchar" MaxLength="40" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="3" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="25" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_resource_detail">
+    <Key>
+      <PropertyRef Name="resource_detail_id" />
+    </Key>
+    <Property Name="resource_detail_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="resource_master_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="locale_id" Type="varchar" MaxLength="40" />
+    <Property Name="value" Type="nvarchar" MaxLength="2000" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_resource_master">
+    <Key>
+      <PropertyRef Name="resource_master_id" />
+    </Key>
+    <Property Name="resource_master_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="resource_name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="400" />
+    <Property Name="default_value" Type="nvarchar" MaxLength="2000" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="first_name" Type="nvarchar" MaxLength="200" />
+    <Property Name="last_name" Type="nvarchar" MaxLength="200" />
+    <Property Name="password" Type="nvarchar" MaxLength="200" />
+    <Property Name="locale_id" Type="varchar" MaxLength="40" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="department" Type="nvarchar" MaxLength="120" />
+    <Property Name="supervisor" Type="nvarchar" MaxLength="120" />
+    <Property Name="email_address" Type="nvarchar" MaxLength="120" />
+    <Property Name="domain_user_id" Type="nvarchar" MaxLength="120" />
+    <Property Name="domain" Type="nvarchar" MaxLength="120" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="last_change_password" Type="datetime" />
+    <Property Name="is_use_policy_password" Type="nvarchar" MaxLength="12" />
+  </EntityType>
+  <EntityType Name="t_com_user_application">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="user_group_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user_change_password_log">
+    <Key>
+      <PropertyRef Name="change_password_log_id" />
+    </Key>
+    <Property Name="change_password_log_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user_device">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="device" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="logon_datetime" Type="datetime" Nullable="false" />
+    <Property Name="last_alive_time" Type="datetime" />
+    <Property Name="logout_datetime" Type="datetime" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user_group">
+    <Key>
+      <PropertyRef Name="user_group_id" />
+    </Key>
+    <Property Name="user_group_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user_group_menu">
+    <Key>
+      <PropertyRef Name="user_group_id" />
+      <PropertyRef Name="menu_id" />
+    </Key>
+    <Property Name="user_group_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="menu_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <EntityType Name="t_com_user_logon">
+    <Key>
+      <PropertyRef Name="tran_id" />
+    </Key>
+    <Property Name="tran_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="tran_type" Type="nvarchar" MaxLength="40" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="logon_start_datetime" Type="datetime" Nullable="false" />
+    <Property Name="logon_end_datetime" Type="datetime" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="25" Nullable="false" />
+    <Property Name="device" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="logon_time" Type="int" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="create_by" Type="nvarchar" MaxLength="40" />
+    <Property Name="rowversion" Type="timestamp" StoreGeneratedPattern="Computed" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WM3_Security.dbo.v_com_get_authen_by_menu_group' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="v_com_get_authen_by_menu_group">
+    <Key>
+      <PropertyRef Name="user_group_id" />
+      <PropertyRef Name="menu_sequence" />
+      <PropertyRef Name="menu_id" />
+      <PropertyRef Name="is_active" />
+      <PropertyRef Name="platform" />
+      <PropertyRef Name="resource_master_id" />
+      <PropertyRef Name="app_id" />
+    </Key>
+    <Property Name="user_group_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="is_active" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="platform" Type="nvarchar" MaxLength="120" Nullable="false" />
+    <Property Name="menu_group" Type="nvarchar" MaxLength="200" />
+    <Property Name="parent_menu_id" Type="varchar" MaxLength="40" />
+    <Property Name="menu_group_sequence" Type="int" />
+    <Property Name="menu_sequence" Type="int" Nullable="false" />
+    <Property Name="process" Type="nvarchar" MaxLength="800" />
+    <Property Name="resource_master_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="locale_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="menu_name" Type="nvarchar" MaxLength="2000" />
+    <Property Name="resource_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="menu_id" Type="varchar" MaxLength="40" Nullable="false" />
+    <Property Name="app_id" Type="varchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_menu_id">
+    <End Role="t_com_menu" Type="Self.t_com_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="t_com_user_group_menu" Type="Self.t_com_user_group_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_menu">
+        <PropertyRef Name="menu_id" />
+      </Principal>
+      <Dependent Role="t_com_user_group_menu">
+        <PropertyRef Name="menu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_application">
+    <End Role="t_com_application" Type="Self.t_com_application" Multiplicity="1" />
+    <End Role="t_com_user_application" Type="Self.t_com_user_application" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_application">
+        <PropertyRef Name="app_id" />
+      </Principal>
+      <Dependent Role="t_com_user_application">
+        <PropertyRef Name="app_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_config_t_com_application">
+    <End Role="t_com_application" Type="Self.t_com_application" Multiplicity="1" />
+    <End Role="t_com_config" Type="Self.t_com_config" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_application">
+        <PropertyRef Name="app_id" />
+      </Principal>
+      <Dependent Role="t_com_config">
+        <PropertyRef Name="app_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_resource_detail_t_com_resource_master">
+    <End Role="t_com_resource_master" Type="Self.t_com_resource_master" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="t_com_resource_detail" Type="Self.t_com_resource_detail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_resource_master">
+        <PropertyRef Name="resource_master_id" />
+      </Principal>
+      <Dependent Role="t_com_resource_detail">
+        <PropertyRef Name="resource_master_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_user_device_t_com_application">
+    <End Role="t_com_application" Type="Self.t_com_application" Multiplicity="1" />
+    <End Role="t_com_user_device" Type="Self.t_com_user_device" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_application">
+        <PropertyRef Name="app_id" />
+      </Principal>
+      <Dependent Role="t_com_user_device">
+        <PropertyRef Name="app_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_user_group">
+    <End Role="t_com_user_group" Type="Self.t_com_user_group" Multiplicity="1" />
+    <End Role="t_com_user_application" Type="Self.t_com_user_application" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_user_group">
+        <PropertyRef Name="user_group_id" />
+      </Principal>
+      <Dependent Role="t_com_user_application">
+        <PropertyRef Name="user_group_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_user_group_t_com_application">
+    <End Role="t_com_application" Type="Self.t_com_application" Multiplicity="1" />
+    <End Role="t_com_user_group" Type="Self.t_com_user_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_application">
+        <PropertyRef Name="app_id" />
+      </Principal>
+      <Dependent Role="t_com_user_group">
+        <PropertyRef Name="app_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_t_com_user_logon_t_com_application1">
+    <End Role="t_com_application" Type="Self.t_com_application" Multiplicity="1" />
+    <End Role="t_com_user_logon" Type="Self.t_com_user_logon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="t_com_application">
+        <PropertyRef Name="app_id" />
+      </Principal>
+      <Dependent Role="t_com_user_logon">
+        <PropertyRef Name="app_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SecurityModelStoreContainer">
+    <EntitySet Name="t_com_application" EntityType="Self.t_com_application" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_config" EntityType="Self.t_com_config" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_locale" EntityType="Self.t_com_locale" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_menu" EntityType="Self.t_com_menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_resource_detail" EntityType="Self.t_com_resource_detail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_resource_master" EntityType="Self.t_com_resource_master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user" EntityType="Self.t_com_user" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_application" EntityType="Self.t_com_user_application" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_change_password_log" EntityType="Self.t_com_user_change_password_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_device" EntityType="Self.t_com_user_device" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_group" EntityType="Self.t_com_user_group" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_group_menu" EntityType="Self.t_com_user_group_menu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="t_com_user_logon" EntityType="Self.t_com_user_logon" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="v_com_get_authen_by_menu_group" EntityType="Self.v_com_get_authen_by_menu_group" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [v_com_get_authen_by_menu_group].[user_group_id] AS [user_group_id], 
+    [v_com_get_authen_by_menu_group].[is_active] AS [is_active], 
+    [v_com_get_authen_by_menu_group].[platform] AS [platform], 
+    [v_com_get_authen_by_menu_group].[menu_group] AS [menu_group], 
+    [v_com_get_authen_by_menu_group].[parent_menu_id] AS [parent_menu_id], 
+    [v_com_get_authen_by_menu_group].[menu_group_sequence] AS [menu_group_sequence], 
+    [v_com_get_authen_by_menu_group].[menu_sequence] AS [menu_sequence], 
+    [v_com_get_authen_by_menu_group].[process] AS [process], 
+    [v_com_get_authen_by_menu_group].[resource_master_id] AS [resource_master_id], 
+    [v_com_get_authen_by_menu_group].[locale_id] AS [locale_id], 
+    [v_com_get_authen_by_menu_group].[menu_name] AS [menu_name], 
+    [v_com_get_authen_by_menu_group].[resource_name] AS [resource_name], 
+    [v_com_get_authen_by_menu_group].[menu_id] AS [menu_id], 
+    [v_com_get_authen_by_menu_group].[app_id] AS [app_id]
+    FROM [dbo].[v_com_get_authen_by_menu_group] AS [v_com_get_authen_by_menu_group]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_menu_id" Association="Self.FK_menu_id">
+      <End Role="t_com_menu" EntitySet="t_com_menu" />
+      <End Role="t_com_user_group_menu" EntitySet="t_com_user_group_menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_application" Association="Self.FK_t_com_application">
+      <End Role="t_com_application" EntitySet="t_com_application" />
+      <End Role="t_com_user_application" EntitySet="t_com_user_application" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_config_t_com_application" Association="Self.FK_t_com_config_t_com_application">
+      <End Role="t_com_application" EntitySet="t_com_application" />
+      <End Role="t_com_config" EntitySet="t_com_config" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_resource_detail_t_com_resource_master" Association="Self.FK_t_com_resource_detail_t_com_resource_master">
+      <End Role="t_com_resource_master" EntitySet="t_com_resource_master" />
+      <End Role="t_com_resource_detail" EntitySet="t_com_resource_detail" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_user_device_t_com_application" Association="Self.FK_t_com_user_device_t_com_application">
+      <End Role="t_com_application" EntitySet="t_com_application" />
+      <End Role="t_com_user_device" EntitySet="t_com_user_device" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_user_group" Association="Self.FK_t_com_user_group">
+      <End Role="t_com_user_group" EntitySet="t_com_user_group" />
+      <End Role="t_com_user_application" EntitySet="t_com_user_application" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_user_group_t_com_application" Association="Self.FK_t_com_user_group_t_com_application">
+      <End Role="t_com_application" EntitySet="t_com_application" />
+      <End Role="t_com_user_group" EntitySet="t_com_user_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_t_com_user_logon_t_com_application1" Association="Self.FK_t_com_user_logon_t_com_application1">
+      <End Role="t_com_application" EntitySet="t_com_application" />
+      <End Role="t_com_user_logon" EntitySet="t_com_user_logon" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

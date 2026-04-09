@@ -1,0 +1,2 @@
+D:\Program\Wan_Thai\Web\WMS_NEW\obj\Release\WMS_NEW.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\WMS_NEW\obj\Release\WMS_NEW.csproj.CoreCompileInputs.cache

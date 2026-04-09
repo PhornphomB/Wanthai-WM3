@@ -1,0 +1,103 @@
+﻿.content_filter {
+    width: 15px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+ul.nav-list li.dropdown a.filter {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 17px;
+    text-shadow: 1px 1px 12px #fff;
+    color: #666666;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #d4d4d4;
+    background-color: #fafafa;
+    /*background-image: linear-gradient(to bottom, #fafafa, #eeeeee);
+    background-repeat: repeat-x;*/
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    /*-webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;*/
+}
+
+a.filter-disabled, a.filter-disabled:hover {
+    background-color: #cccccc;
+    cursor: no-drop;
+    border: 1px solid #cccccc;
+}
+
+ul.nav-list li.dropdown ul.filter-menu {
+    margin-top: -30px;
+    margin-left: 16px;
+}
+
+    ul.nav-list li.dropdown ul.filter-menu a {
+        line-height: 18px;
+    }
+
+
+
+.grid-head-ctrl {
+    position: relative;
+    clear: both;
+}
+
+.grid-head-text {
+    float: left;
+    word-wrap: normal;
+    word-break: break-all;
+}
+
+.grid-filter, .grid-filter-active, .grid-sort, .grid-sort-active {
+    width: 24px;
+    height: 22px;
+    float: right;
+    padding-top: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.index-sort {
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.grid-filter, .grid-sort {
+    border: 1px solid #d4d4d4;
+    background-color: #fafafa;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+    .grid-filter:hover, .grid-filter:focus, .grid-sort:hover, .grid-sort:focus {
+        border: 1px solid #3A87AD;
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }
+
+.grid-filter-active, .grid-sort-active {
+    border: 1px solid #3A87AD;
+    background-color: #3A87AD;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.grid-sort-active {
+    /* for .index-sort */
+    position: relative;
+}
+
+    .grid-filter-active:hover, .grid-filter-active:focus, .grid-sort-active:hover, .grid-sort-active:focus {
+        opacity: 1.0;
+        filter: alpha(opacity=100);
+    }

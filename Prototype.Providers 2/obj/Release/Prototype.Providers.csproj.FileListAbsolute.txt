@@ -1,0 +1,4 @@
+D:\Program\Wan_Thai\Web\Prototype.Providers 2\obj\Release\Prototype.Providers.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\Prototype.Providers 2\obj\Release\Prototype.Providers.Message.resources
+D:\Program\Wan_Thai\Web\Prototype.Providers 2\obj\Release\Prototype.Providers.csproj.GenerateResource.cache
+D:\Program\Wan_Thai\Web\Prototype.Providers 2\obj\Release\Prototype.Providers.csproj.CoreCompileInputs.cache

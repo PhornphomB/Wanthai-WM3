@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Prototype.Providers.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MinDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1900-01-01</Value>
+    </Setting>
+    <Setting Name="MaxDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2900-12-31</Value>
+    </Setting>
+    <Setting Name="FormatDateTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dd.MM.yyyy HH:mm:ss</Value>
+    </Setting>
+    <Setting Name="FormatDate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dd.MM.yyyy</Value>
+    </Setting>
+    <Setting Name="FormatTime" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HH:mm:ss</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

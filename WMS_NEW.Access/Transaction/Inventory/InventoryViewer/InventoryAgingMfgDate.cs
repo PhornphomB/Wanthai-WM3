@@ -1,0 +1,156 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Data;
+
+using System.Data.Entity;
+using System.Data.Entity.SqlServer;
+
+using Prototype.Providers;
+using WMS_NEW.Source;
+
+namespace WMS_NEW.Access.Transaction.Inventory.InventoryViewer
+{
+    public class InventoryAgingMfgDate : AGridObjectSourceQuery,IDisposable
+    {
+        public WMSEntities _Model { get; set; }
+
+        public InventoryAgingMfgDate()
+        {
+            this._Model = new WMSEntities();
+            this._Model.Database.CommandTimeout = 180;
+
+            //AGridObjectSourceQuery Map Model
+            base.GridObjContext = _Model;
+        }
+
+
+        #region ++INSTANCE STATIC++
+        public static InventoryAgingMfgDate Instance
+        {
+            get
+            {
+                using (InventoryAgingMfgDate _Instance = new InventoryAgingMfgDate())
+                {
+                    return _Instance;
+                }
+            }
+        }
+        #endregion
+
+
+        #region Inherit AGridObjectSourceQuery
+
+        public override IQueryable<dynamic> InitialQueryView()
+        {
+            var value = this._Model.t_wms_rule.Where(w => w.rule_code == "AGING_MFG_DATE" && w.is_active == "YES").Select(s => s.value).FirstOrDefault();
+            int intValue = 0;
+            int.TryParse(value, out intValue);
+            var condition = this._Model.t_wms_rule.Where(w => w.rule_code == "AGING_MFG_DATE" && w.is_active == "YES").Select(s => s.condition).FirstOrDefault();
+
+            var _active_load = this.FilterCustom.FirstOrDefault(wh => wh.DataFieldValue == "_active_load");
+
+            DateTime min_date = new DateTime(1753, 1, 7);
+            var listWh = this._Model.t_wms_wh_user.Where(w => w.user_id == _SessionVals.UserName).Select(s => s.wh_master_id);
+            var listOwn = this._Model.t_wms_owner_user.Where(w => w.user_id == _SessionVals.UserName).Select(s => s.owner_id);
+
+            var result = from rows in this._Model.v_wms_inventory_data_by_aging
+                         where listWh.Contains(rows.wh_master_id)
+                         && listOwn.Contains(rows.owner_id)
+                         //&& rows.mfg_date >= value
+                         let _minDate = DbFunctions.CreateDateTime(0001, 1, 1, 0, 0, 0)
+                         let _year = SqlFunctions.DatePart("year", (DbFunctions.Left(rows.expiry_date, 4).Trim()))
+                         let _month = SqlFunctions.DatePart("year", "00" + rows.expiry_date.Substring(4, 2).Trim())
+                         let _day = SqlFunctions.DatePart("year", "00" + rows.expiry_date.Substring(6, 2).Trim())
+                         let expiry_date = !string.IsNullOrEmpty(rows.expiry_date)
+                         ? SqlFunctions.DateAdd("day", _day - 1,
+                               SqlFunctions.DateAdd("month", _month - 1,
+                                   SqlFunctions.DateAdd("year", _year - 1, _minDate)))
+                         : min_date
+                         //where listLoc.Contains(rows.loc_type)
+                         select new
+                         {
+                             KeyId = rows.inventory_id,
+                             rows.wh_master_id,
+                             rows.wh_id,
+                             rows.owner_code,
+                             rows.zone,
+                             rows.location,
+                             rows.item_number,
+                             rows.description,
+                             rows.lpn,
+                             rows.parent_lpn,
+                             rows.inv_status,
+                             rows.lot_number,
+                             expiry_date = expiry_date == min_date ? null : expiry_date,
+                             rows.quantity,
+                             rows.quantity_allocated,
+                             rows.uom,
+                             rows.dg_code,
+                             rows.serial_number,
+                             rows.grade,
+                             rows.item_category,
+                             rows.price,
+                             rows.receive_date,
+                             rows.item_master_id,
+                             rows.category_id,
+                             rows.cate_description,
+                             rows.owner_id,
+                             rows.days_to_expire,
+                             //#ทำเป็น Temp หลอก เพื่อให้ทุกหน้าจอ ค้นหาได้
+                             delivery_date = min_date,
+                             delivery_number = "",
+                             receipt_date = DbFunctions.TruncateTime(rows.receive_date),
+                             aging = SqlFunctions.DateDiff("dd", rows.mfg_date, DateTime.Now),
+                             remain_aging = expiry_date == min_date ? 0 : SqlFunctions.DateDiff("dd", DateTime.Now, expiry_date),
+                             //#Custom
+                             rows.alternate_item_number,
+                             //rows.inbound_order_number
+                             rows.mfg_date,
+                         };
+            
+            // Apply the dynamic condition to mfg_date
+            if (!string.IsNullOrEmpty(condition) && intValue > 0)
+            {
+                switch (condition.Trim())
+                {
+                    case ">":
+                        result = result.Where(r => r.aging > intValue);
+                        break;
+                    case "<":
+                        result = result.Where(r => r.aging < intValue);
+                        break;
+                    case ">=":
+                        result = result.Where(r => r.aging >= intValue);
+                        break;
+                    case "<=":
+                        result = result.Where(r => r.aging <= intValue);
+                        break;
+                    case "==":
+                        result = result.Where(r => r.aging == intValue);
+                        break;
+                    case "!=":
+                        result = result.Where(r => r.aging != intValue);
+                        break;
+                    default:
+                        // Optionally handle unknown conditions
+                        break;
+                }
+            }
+            if (_active_load == null)
+            {
+                result = result.Where(wh => false);
+            }
+
+            return result;
+        }
+        public override IQueryable<dynamic> InitialQueryExport()
+        {
+            return this.InitialQueryView();
+        }
+
+        #endregion
+
+    }
+}

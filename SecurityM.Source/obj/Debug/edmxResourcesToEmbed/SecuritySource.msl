@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SecurityModelStoreContainer" CdmEntityContainer="SecurityM_Entities">
+    <EntitySetMapping Name="t_com_application">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_application">
+        <MappingFragment StoreEntitySet="t_com_application">
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="application_name" ColumnName="application_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="license_type" ColumnName="license_type" />
+          <ScalarProperty Name="number_of_users" ColumnName="number_of_users" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="app_version" ColumnName="app_version" />
+          <ScalarProperty Name="date_installed" ColumnName="date_installed" />
+          <ScalarProperty Name="expiry_date" ColumnName="expiry_date" />
+          <ScalarProperty Name="maintenance_support_date" ColumnName="maintenance_support_date" />
+          <ScalarProperty Name="db_server_name" ColumnName="db_server_name" />
+          <ScalarProperty Name="db_name" ColumnName="db_name" />
+          <ScalarProperty Name="db_user" ColumnName="db_user" />
+          <ScalarProperty Name="db_password" ColumnName="db_password" />
+          <ScalarProperty Name="db_connectionstring" ColumnName="db_connectionstring" />
+          <ScalarProperty Name="environment" ColumnName="environment" />
+          <ScalarProperty Name="security_mode" ColumnName="security_mode" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+          <ScalarProperty Name="use_expirydate" ColumnName="use_expirydate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_config">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_config">
+        <MappingFragment StoreEntitySet="t_com_config">
+          <ScalarProperty Name="config_id" ColumnName="config_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="platform" ColumnName="platform" />
+          <ScalarProperty Name="config_code" ColumnName="config_code" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="sequence" ColumnName="sequence" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_locale">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_locale">
+        <MappingFragment StoreEntitySet="t_com_locale">
+          <ScalarProperty Name="locale_id" ColumnName="locale_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="locale" ColumnName="locale" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_menu">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_menu">
+        <MappingFragment StoreEntitySet="t_com_menu">
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="platform" ColumnName="platform" />
+          <ScalarProperty Name="menu_group" ColumnName="menu_group" />
+          <ScalarProperty Name="menu_group_sequence" ColumnName="menu_group_sequence" />
+          <ScalarProperty Name="parent_menu_id" ColumnName="parent_menu_id" />
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="menu_sequence" ColumnName="menu_sequence" />
+          <ScalarProperty Name="process" ColumnName="process" />
+          <ScalarProperty Name="resource_master_id" ColumnName="resource_master_id" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_resource_detail">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_resource_detail">
+        <MappingFragment StoreEntitySet="t_com_resource_detail">
+          <ScalarProperty Name="resource_detail_id" ColumnName="resource_detail_id" />
+          <ScalarProperty Name="resource_master_id" ColumnName="resource_master_id" />
+          <ScalarProperty Name="locale_id" ColumnName="locale_id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_resource_master">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_resource_master">
+        <MappingFragment StoreEntitySet="t_com_resource_master">
+          <ScalarProperty Name="resource_master_id" ColumnName="resource_master_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="resource_name" ColumnName="resource_name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="default_value" ColumnName="default_value" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user">
+        <MappingFragment StoreEntitySet="t_com_user">
+          <ScalarProperty Name="is_use_policy_password" ColumnName="is_use_policy_password" />
+          <ScalarProperty Name="last_change_password" ColumnName="last_change_password" />
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="first_name" ColumnName="first_name" />
+          <ScalarProperty Name="last_name" ColumnName="last_name" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="locale_id" ColumnName="locale_id" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="department" ColumnName="department" />
+          <ScalarProperty Name="supervisor" ColumnName="supervisor" />
+          <ScalarProperty Name="email_address" ColumnName="email_address" />
+          <ScalarProperty Name="domain_user_id" ColumnName="domain_user_id" />
+          <ScalarProperty Name="domain" ColumnName="domain" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_application">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_application">
+        <MappingFragment StoreEntitySet="t_com_user_application">
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_group_id" ColumnName="user_group_id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_group">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_group">
+        <MappingFragment StoreEntitySet="t_com_user_group">
+          <ScalarProperty Name="user_group_id" ColumnName="user_group_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_group_menu">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_group_menu">
+        <MappingFragment StoreEntitySet="t_com_user_group_menu">
+          <ScalarProperty Name="user_group_id" ColumnName="user_group_id" />
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_logon">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_logon">
+        <MappingFragment StoreEntitySet="t_com_user_logon">
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="tran_type" ColumnName="tran_type" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="logon_start_datetime" ColumnName="logon_start_datetime" />
+          <ScalarProperty Name="logon_end_datetime" ColumnName="logon_end_datetime" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="device" ColumnName="device" />
+          <ScalarProperty Name="logon_time" ColumnName="logon_time" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="v_com_get_authen_by_menu_group">
+      <EntityTypeMapping TypeName="SecurityModel.v_com_get_authen_by_menu_group">
+        <MappingFragment StoreEntitySet="v_com_get_authen_by_menu_group">
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="menu_id" ColumnName="menu_id" />
+          <ScalarProperty Name="resource_name" ColumnName="resource_name" />
+          <ScalarProperty Name="menu_name" ColumnName="menu_name" />
+          <ScalarProperty Name="locale_id" ColumnName="locale_id" />
+          <ScalarProperty Name="resource_master_id" ColumnName="resource_master_id" />
+          <ScalarProperty Name="process" ColumnName="process" />
+          <ScalarProperty Name="menu_sequence" ColumnName="menu_sequence" />
+          <ScalarProperty Name="menu_group_sequence" ColumnName="menu_group_sequence" />
+          <ScalarProperty Name="parent_menu_id" ColumnName="parent_menu_id" />
+          <ScalarProperty Name="menu_group" ColumnName="menu_group" />
+          <ScalarProperty Name="platform" ColumnName="platform" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="user_group_id" ColumnName="user_group_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_device">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_device">
+        <MappingFragment StoreEntitySet="t_com_user_device">
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="logout_datetime" ColumnName="logout_datetime" />
+          <ScalarProperty Name="last_alive_time" ColumnName="last_alive_time" />
+          <ScalarProperty Name="logon_datetime" ColumnName="logon_datetime" />
+          <ScalarProperty Name="is_active" ColumnName="is_active" />
+          <ScalarProperty Name="device" ColumnName="device" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="app_id" ColumnName="app_id" />
+          <ScalarProperty Name="tran_id" ColumnName="tran_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="t_com_user_change_password_log">
+      <EntityTypeMapping TypeName="SecurityModel.t_com_user_change_password_log">
+        <MappingFragment StoreEntitySet="t_com_user_change_password_log">
+          <ScalarProperty Name="rowversion" ColumnName="rowversion" />
+          <ScalarProperty Name="create_by" ColumnName="create_by" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="change_password_log_id" ColumnName="change_password_log_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

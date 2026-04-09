@@ -1,0 +1,8 @@
+﻿<customControls:GridViewExt runat="server" RowStyle-HorizontalAlign="Left" HeaderStyle-HorizontalAlign="Center" 
+CssClass="table table-responsive-sm table-hover mb-0 gridview-custom" GridLines="None" PageSize="50">
+    <HeaderStyle CssClass="thead-default" />
+    <EmptyDataTemplate>
+        <div style="text-align:center;"> Not Found Data.</div>
+        
+    </EmptyDataTemplate>
+</customControls:GridViewExt>

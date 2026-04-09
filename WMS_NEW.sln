@@ -1,0 +1,106 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS_NEW", "WMS_NEW\WMS_NEW.csproj", "{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototype.Providers", "Prototype.Providers 2\Prototype.Providers.csproj", "{3B5B4521-5F80-404F-BABF-F3095BC11FAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS_NEW.Access", "WMS_NEW.Access\WMS_NEW.Access.csproj", "{1E45D6DC-933D-4F46-84A5-2C225F650480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WMS_NEW.Source", "WMS_NEW.Source\WMS_NEW.Source.csproj", "{BEF13F85-A16C-4EBE-81AE-857E9E537995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigGlobal", "ConfigGlobal\ConfigGlobal.csproj", "{94D6CA30-39D8-4BB1-8329-44893A4A4258}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityM.Source", "SecurityM.Source\SecurityM.Source.csproj", "{16791C24-834D-4C87-9587-94520EA77B38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecurityM.Access", "SecurityM.Access\SecurityM.Access.csproj", "{045D8A41-2923-454E-AD7D-9B749014CA9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigAzureDb", "ConfigAzureDb\ConfigAzureDb.csproj", "{54C6BFDE-5ADF-4123-BB74-23109AEF1299}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSecurityApi.DTO", "WebSecurityApi.DTO\WebSecurityApi.DTO.csproj", "{E276E53B-46BB-4947-A780-E32E7D6DDC67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525A9B7A-C6ED-47C0-AB26-53C84F0D0C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B5B4521-5F80-404F-BABF-F3095BC11FAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B5B4521-5F80-404F-BABF-F3095BC11FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B5B4521-5F80-404F-BABF-F3095BC11FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B5B4521-5F80-404F-BABF-F3095BC11FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E45D6DC-933D-4F46-84A5-2C225F650480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E45D6DC-933D-4F46-84A5-2C225F650480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E45D6DC-933D-4F46-84A5-2C225F650480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E45D6DC-933D-4F46-84A5-2C225F650480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF13F85-A16C-4EBE-81AE-857E9E537995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF13F85-A16C-4EBE-81AE-857E9E537995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF13F85-A16C-4EBE-81AE-857E9E537995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF13F85-A16C-4EBE-81AE-857E9E537995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94D6CA30-39D8-4BB1-8329-44893A4A4258}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D6CA30-39D8-4BB1-8329-44893A4A4258}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D6CA30-39D8-4BB1-8329-44893A4A4258}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D6CA30-39D8-4BB1-8329-44893A4A4258}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16791C24-834D-4C87-9587-94520EA77B38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16791C24-834D-4C87-9587-94520EA77B38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16791C24-834D-4C87-9587-94520EA77B38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16791C24-834D-4C87-9587-94520EA77B38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{045D8A41-2923-454E-AD7D-9B749014CA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{045D8A41-2923-454E-AD7D-9B749014CA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{045D8A41-2923-454E-AD7D-9B749014CA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{045D8A41-2923-454E-AD7D-9B749014CA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54C6BFDE-5ADF-4123-BB74-23109AEF1299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54C6BFDE-5ADF-4123-BB74-23109AEF1299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54C6BFDE-5ADF-4123-BB74-23109AEF1299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54C6BFDE-5ADF-4123-BB74-23109AEF1299}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E276E53B-46BB-4947-A780-E32E7D6DDC67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E276E53B-46BB-4947-A780-E32E7D6DDC67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E276E53B-46BB-4947-A780-E32E7D6DDC67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E276E53B-46BB-4947-A780-E32E7D6DDC67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {622A849B-8142-4253-861D-F0C3D0777D58}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dev.azure.com/ogawms
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ConfigAzureDb\\ConfigAzureDb.csproj
+		SccProjectName1 = ConfigAzureDb
+		SccLocalPath1 = ConfigAzureDb
+		SccProjectUniqueName2 = ConfigGlobal\\ConfigGlobal.csproj
+		SccProjectName2 = ConfigGlobal
+		SccLocalPath2 = ConfigGlobal
+		SccProjectUniqueName3 = Prototype.Providers\u00202\\Prototype.Providers.csproj
+		SccProjectName3 = Prototype.Providers\u00202
+		SccLocalPath3 = Prototype.Providers\u00202
+		SccProjectUniqueName4 = SecurityM.Access\\SecurityM.Access.csproj
+		SccProjectName4 = SecurityM.Access
+		SccLocalPath4 = SecurityM.Access
+		SccProjectUniqueName5 = SecurityM.Source\\SecurityM.Source.csproj
+		SccProjectName5 = SecurityM.Source
+		SccLocalPath5 = SecurityM.Source
+		SccProjectUniqueName6 = WebSecurityApi.DTO\\WebSecurityApi.DTO.csproj
+		SccProjectName6 = WebSecurityApi.DTO
+		SccLocalPath6 = WebSecurityApi.DTO
+		SccProjectUniqueName7 = WMS_NEW.Access\\WMS_NEW.Access.csproj
+		SccProjectName7 = WMS_NEW.Access
+		SccLocalPath7 = WMS_NEW.Access
+		SccProjectUniqueName8 = WMS_NEW.Source\\WMS_NEW.Source.csproj
+		SccProjectName8 = WMS_NEW.Source
+		SccLocalPath8 = WMS_NEW.Source
+		SccProjectUniqueName9 = WMS_NEW\\WMS_NEW.csproj
+		SccProjectName9 = WMS_NEW
+		SccLocalPath9 = WMS_NEW
+	EndGlobalSection
+EndGlobal

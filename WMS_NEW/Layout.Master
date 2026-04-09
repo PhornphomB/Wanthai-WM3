@@ -1,0 +1,381 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="WMS_NEW.Layout" %>
+
+
+<%@ Register Src="~/_UControls/ucLoading.ascx" TagPrefix="ucControls" TagName="ucLoading" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="_theme/img/favicon.png">
+
+    <title><%
+               if (string.IsNullOrEmpty(this.MenuCurrentName))
+               {
+                   Response.Write(ConfigurationManager.AppSettings["WebName"]);
+               }
+               else
+               {
+                   Response.Write(this.MenuCurrentName);
+               }
+    %></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+    <!-- Icons -->
+    <link href="_theme/css/font-awesome.css" rel="stylesheet">
+    <link href="_theme/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Main styles for this application -->
+    <link href="_theme/css/style.css" rel="stylesheet">
+    <link href="_theme/css/style-table.css" rel="stylesheet">
+    <link href="_css/theme.css" rel="stylesheet" />
+    <link href="_css/loading.css" rel="stylesheet" />
+    <link href="_css/ucontrol-filter.css" rel="stylesheet" />
+
+    <link href="_css/pace.css" rel="stylesheet" />
+    <link href="_css/pace-indicator.css" rel="stylesheet" />
+
+    <link href="_plugin/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_plugin/tooltipster/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="_plugin/tooltipster/css/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-noir.min.css" />
+
+    <link href="_plugin/bootstrap-dropdown-2-3.4.4/select2.css" rel="stylesheet" />
+    <%--    <link href="_css/boostrap-icon.css" rel="stylesheet" />--%>
+
+
+    <%--    theme-red-white--%>
+    <link href="_css/theme/red-white/style.css" rel="stylesheet" />
+    <link href="_css/theme/red-white/datetimepicker.css" rel="stylesheet" />
+    <link href="_css/theme/red-white/table.css" rel="stylesheet" />
+    <link href="_css/theme/red-white/loading.css" rel="stylesheet" />
+    <link href="_css/theme-light.css" rel="stylesheet" />
+    <link href="_css/theme-dark.css" rel="stylesheet" />
+    <link href="_css/theme/red-white/warehouse_virtual.css" rel="stylesheet" />
+    <link href="_plugin/plupload-v1.2.1/jquery.plupload.queue/css/jquery.plupload.queue.css" rel="stylesheet" />
+    <link href="_css/custom_uploadfile.css" rel="stylesheet" />
+    <link href="_css/gallery-image.css" rel="stylesheet" />
+    <link href="_plugin/multiple_dropdown/bootstrap-multiselect.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .bootstrap-datetimepicker-widget.dropdown-menu {
+            display: inline-block;
+            z-index: 1151;
+        }
+
+        .light .table-row-selected, .light .table-row-selected a {
+            font-weight: bold;
+            color: #2883c0 !important;
+            background-color: #d8eaf5 !important;
+        }
+
+        .dark .table-row-selected, .dark .table-row-selected a {
+            font-weight: bold;
+            color: #3acbc3 !important;
+            background-color: #36555f !important;
+        }
+
+        .uk-text-danger {
+            color: #f24759 !important;
+            font-weight: bold;
+        }
+    </style>
+
+    <asp:PlaceHolder ID="myScript" runat="server">
+        <!-- Bootstrap and necessary plugins -->
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/jquery-1.9.1.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/jquery-ui-1.10.3.custom.min.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/moment.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/bootstrap.min.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/tether.min.js")%>'></script>
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/angular.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/ng-infinite-scroll.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/jquery.signalR-2.2.2.js")%>'></script>
+
+        <script type="text/javascript" src='<%= ResolveUrl("_plugin/bootstrap-datetimepicker-master/src/js/bootstrap-datetimepicker.js")%>'></script>
+        <script type="text/javascript" charset="utf-8" src='<%= ResolveUrl("~/_plugin/datepicker-th.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/tooltipster/js/tooltipster.bundle.min.js")%>'></script>
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/gridviewScroll.min.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/gridHeaderFilter.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/gridCheckBox.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/utility.js")%>'></script>
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/ctrlDropdownSearch.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/ctrlDropdownManual.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/bootstrap-dropdown-2-3.4.4/select2.min.js")%>'></script>
+
+        <%--<script type="text/javascript" src='<%= ResolveUrl("~/_scripts/validator.js")%>'></script>--%>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/pace.min.js")%>'></script>
+
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/checkBox.js")%>'></script>
+
+        <!-- GenesisUI main scripts -->
+        <script type="text/javascript" src='<%= ResolveUrl("~/_theme/js/app.js")%>'></script>
+        <!-- Initial angular app -->
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/jquery.signalR-2.3.0.js")%>'></script>
+
+        <!-- Initial angular app -->
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scriptsAng/app.js")%>'></script>
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/jquery.inputmask.bundle.js")%>'></script>
+        <%--        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/fileUpload.js")%>'></script>--%>
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/chart/Chart.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/chart/chartjs-plugin-labels.js")%>'></script>
+
+
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/plupload-v1.2.1/plupload.full.min.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/plupload-v1.2.1/jquery.plupload.queue/jquery.plupload.queue.min.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_scripts/uploadFile.js")%>'></script>
+        <script type="text/javascript" src='<%= ResolveUrl("~/_plugin/multiple_dropdown/bootstrap-multiselect.js")%>'></script>
+
+        <script type="text/javascript">
+            function changeTheme(thm) {
+                if (thm == "DARK") {
+                    $('body').removeClass("light");
+                    $('body').addClass("dark");
+                }
+                else {
+                    $('body').removeClass("dark");
+                    $('body').addClass("light");
+                }
+            }
+
+            function onTextEnterChange(event, key_name, search_id) {
+                var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+                if (keyCode === 13) {
+                    doPostBackAsync(key_name, search_id);
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+
+            function onFocusOutChange(event, key_name, search_id) {
+                var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+                if (keyCode === 13 || event.type === 'focusout') {
+                    doPostBackAsync(key_name, search_id);
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            function gridRowClickHighlight(elm) {
+                $(elm).delegate('td', 'click', function (e) {
+                    $(this).parent().parent().children('tr').removeClass("table-row-selected");
+                    $(this).parent().addClass("table-row-selected");
+                });
+            }
+        </script>
+    </asp:PlaceHolder>
+
+</head>
+
+<body class="app header-fixed <%=this.SidebarFixed %> aside-menu-hidden <%=this.HeaderCss %> <%=this.CssBackground %> <%=this.ThemeName.ToLower() %>" data-ng-app="app" ng-init="hubConnectUrl='<%Response.Write(this.HostUrl); %>'">
+
+    <% if (!Request.Browser.IsMobileDevice)
+        { %>
+    <div id="bg_effect_dark">
+        <%--<div class="dark-background"></div>
+        <div class="dark-background dark-background2"></div>
+        <div class="dark-background dark-background3"></div>--%>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    <% } %>
+
+    <div id="bg_effect_light">
+        <div class="light-background"></div>
+        <div class="light-background light-background2"></div>
+        <div class="light-background light-background3"></div>
+    </div>
+
+    <form id="form1" runat="server" enctype="multipart/form-data">
+
+        <asp:ScriptManager runat="server" EnablePartialRendering="true" ID="ScriptManager1" AsyncPostBackTimeout="0"></asp:ScriptManager>
+
+        <asp:UpdatePanel ID="updateFrom" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional">
+            <ContentTemplate>
+                <ucControls:ucLoading runat="server" ID="ucLoading1" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+
+        <script type="text/javascript">
+
+
+            Sys.Application.add_load(function () {
+                $('.tooltip-box').tooltipster({
+                    theme: 'tooltipster-noir',
+                    delay: 300,
+                    contentAsHTML: true,
+                    distance: 2,
+                    zIndex: 9995
+                });
+
+                $("input").attr("autocomplete", "off");
+            });
+
+
+
+
+            Sys.WebForms.PageRequestManager.getInstance().add_endRequest(function (evt, args) {
+                $(function () {
+                    if (typeof ValidatorUpdateDisplay != 'undefined') {
+                        var originalValidatorUpdateDisplay = ValidatorUpdateDisplay;
+
+                        ValidatorUpdateDisplay = function (val) {
+                            var inputID = $("#" + val.controltovalidate);
+                            var ddlID = $(inputID).closest('div').find('.select2-container');
+                            var labelID = $(inputID).closest('div').find('label');
+
+                            inputID.removeClass("input-danger");
+                            ddlID.removeClass("input-danger");
+                            labelID.removeClass("label-danger");
+
+                            if (!val.isvalid) {
+
+                                inputID.addClass("input-danger");
+                                ddlID.addClass("input-danger");
+                                labelID.addClass("label-danger");
+                            }
+
+                            originalValidatorUpdateDisplay(val);
+                        }
+                    }
+                });
+            });
+
+            function menuToggler() {
+                setTimeout(function () {
+                    $('#<%=btnMenuToggler.ClientID%>').click();
+                }, 200);
+            }
+
+            $('form').on('keyup keypress', function (e) {
+                var keyCode = e.keyCode || e.which;
+                if (keyCode === 13) {
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        </script>
+
+        <%
+            if (!string.IsNullOrEmpty(_SessionVals.UserName))
+            {
+        %>
+        <header id="header" runat="server" class="app-header navbar">
+            <a class="navbar-brand" href="#" style="text-decoration: none;"></a>
+            <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button" data-toggle="sidebar-lg-show">
+                <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
+            </button>
+            <ul class="nav navbar-nav d-md-down-none">
+                <li class="nav-item">
+                    <span class="navbar-toggler-icon">
+                        <a class="nav-link navbar-toggler sidebar-toggler" href="#" onclick="menuToggler();"><i class="icon icon-menu"></i></a>
+                    </span>
+
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle nav-link pr-2" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        <asp:Label ID="labUser" runat="server" class="d-md-down text-uppercase font-weight-bold uk-text-dark-primary" Text="User"></asp:Label>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" style="left: unset;">
+                        <div class="dropdown-header text-center">
+                            <%--<strong>Language </strong>--%>
+                            <img src='<%= ResolveUrl($"_images/country/{ GetLanguage() }.svg") %>' height="20" width="35" />
+                            <asp:UpdatePanel ID="UpdatePanel3" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional" class="mt-3">
+                                <ContentTemplate>
+                                    <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-thm-light" CommandArgument="1033" OnClick="linkLanguage_Click" CausesValidation="false"><img src='<%= ResolveUrl("_images/country/us.svg") %>' height="15" width="25" /> English</asp:LinkButton>
+                                    <asp:LinkButton ID="LinkButton4" runat="server" CssClass="btn btn-thm-light" CommandArgument="1054" OnClick="linkLanguage_Click" CausesValidation="false"><img src='<%= ResolveUrl("_images/country/th.svg") %>' height="15" width="25" /> ไทย</asp:LinkButton>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <div class="dropdown-header text-center">
+
+                            <strong>SETTING</strong>
+                            <asp:UpdatePanel ID="UpdatePanel2" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional" class="mt-3">
+                                <ContentTemplate>
+                                    <asp:Button ID="btThemeDark" runat="server" CssClass="btn btn-thm-dark" Text="D A R K" OnClientClick="changeTheme('DARK');" OnClick="btThemeDark_Click" CausesValidation="false" />
+                                    <asp:Button ID="btThemeLight" runat="server" CssClass="btn btn-thm-light" Text="L I G H T" OnClientClick="changeTheme('LIGHT');" OnClick="btThemeLight_Click" CausesValidation="false" />
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
+                        </div>
+                        <asp:LinkButton ID="linkChangePass" runat="server" CssClass="dropdown-item" PostBackUrl="~/ChangePass.aspx"><i class="fa fa-unlink"></i>Change Password</asp:LinkButton>
+                        <asp:LinkButton ID="linkLogout" runat="server" CssClass="dropdown-item" OnClick="linkLogout_Click" CausesValidation="false"
+                            OnClientClick="if (!confirm('Confirm Logout  ?')) return false;"><i class="fa fa-lock"></i>Logout</asp:LinkButton>
+                    </div>
+                </li>
+            </ul>
+        </header>
+        <% } %>
+
+        <div class="app-body">
+
+            <%
+                if (!string.IsNullOrEmpty(_SessionVals.UserName))
+                {
+            %>
+
+            <div class="sidebar">
+                <nav class="sidebar-nav open">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="<%= ResolveUrl(PageGlobal.SYS_INDEX)%>"><i class="icon-home"></i>Home</a>
+                        </li>
+                        <% RenderMenus(null); %>
+                    </ul>
+                </nav>
+            </div>
+
+            <% } %>
+
+            <!-- Main content -->
+            <main class="main">
+                <!-- Breadcrumb -->
+                <asp:ContentPlaceHolder ID="ContentBreadcrumb" runat="server">
+                    <%
+                        if (!string.IsNullOrEmpty(_SessionVals.UserName))
+                        {
+                            Response.Write(MenuCurrentView);
+                        } %>
+                </asp:ContentPlaceHolder>
+                <div class="container-fluid" oncontextmenu="return false;">
+                    <div>
+                        <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="false">
+                            <ContentTemplate>
+                                <asp:Button runat="server" ID="btnMenuToggler" OnClick="btnMenuToggler_Click" Style="display: none;" />
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                    </div>
+
+                </div>
+                <!-- /.conainer-fluid -->
+            </main>
+
+
+        </div>
+    </form>
+
+    <%--<footer class="app-footer">
+        <span class="float-right version">
+            <asp:Label runat="server" ID="lblVersion"></asp:Label>
+        </span>
+    </footer>--%>
+</body>
+</html>

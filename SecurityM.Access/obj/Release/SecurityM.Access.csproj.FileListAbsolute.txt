@@ -1,0 +1,2 @@
+D:\Program\Wan_Thai\Web\SecurityM.Access\obj\Release\SecurityM.Access.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\SecurityM.Access\obj\Release\SecurityM.Access.csproj.CoreCompileInputs.cache

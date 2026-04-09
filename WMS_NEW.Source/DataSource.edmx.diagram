@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="57c8a8cf85ef49afb59251044e39f5cd" Name="Diagram1" ZoomLevel="43">
+        <EntityTypeShape EntityType="WMSModel.t_wms_owner" Width="1.5" PointX="1.5" PointY="75.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_wh" Width="1.5" PointX="0.75" PointY="52" IsExpanded="true" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_customer" Width="1.5" PointX="0.75" PointY="62.375" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_customer_t_wms_owner" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_wh_user" Width="1.5" PointX="3" PointY="90.875" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_wh_user_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_wh_user_t_wms_wh_user" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_owner_user" Width="1.5" PointX="3.75" PointY="83.875" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_owner_user_t_wms_owner" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_category" Width="1.5" PointX="6.75" PointY="19" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_category" Width="1.5" PointX="4.5" PointY="30.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_category_t_wms_category" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_carrier" Width="1.5" PointX="3.75" PointY="59.625" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_customer_user" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_crossref" Width="1.5" PointX="11.25" PointY="30.875" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_reason" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_supplier" Width="1.5" PointX="0.75" PointY="38.25" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_zone" Width="1.5" PointX="3" PointY="105.25" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_supplier_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_zone_t_wms_wh_master" />
+        <EntityTypeShape EntityType="WMSModel.t_com_combobox_item" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inventory" Width="1.5" PointX="5.25" PointY="74.125" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inventory_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inventory_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_equipment" Width="1.5" PointX="3" PointY="109.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_equipment_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_rule" Width="1.5" PointX="0.75" PointY="4.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_truck" Width="1.5" PointX="13" PointY="64.125" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_truck_type" Width="1.5" PointX="10.75" PointY="72.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_truck_t_wms_carrier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_truck_t_wms_truck_type" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_location_category" Width="1.5" PointX="5.25" PointY="98.375" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_location_category_t_wms_category" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_customer_location" Width="1.5" PointX="8.25" PointY="98.375" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_customer_location_t_wms_customer" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_po_detail" Width="1.5" PointX="14.25" PointY="52.625" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_po_master" Width="1.5" PointX="9" PointY="52.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_master_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_detail_t_wms_inbound_po_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_master_t_wms_supplier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_master_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_receipt_detail" Width="1.5" PointX="13.5" PointY="44.25" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_receipt_header" Width="1.5" PointX="5.25" PointY="39.5" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_receipt_detail_t_wms_receipt_detail" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_pack_detail" Width="1.5" PointX="10.5" PointY="63.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_pick_master" Width="1.5" PointX="11.25" PointY="58.875" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_master_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_comment" Width="1.5" PointX="8.25" PointY="66.125" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_detail_linenumber" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_user_owner" Width="1.5" PointX="8.75" PointY="4.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_user_warehouse" Width="2.5" PointX="6.75" PointY="8.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_warehouse_item" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_zone_category" Width="1.5" PointX="5.25" PointY="105.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_zone_category_t_wms_category" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_zone_category_t_wms_zone" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_wh_item" Width="1.5" PointX="3" PointY="54.375" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inventory_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pack_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_wh_item_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_external_close_plan" Width="1.5" PointX="7.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_plan_detail" Width="1.5" PointX="16" PointY="77" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_plan_detail_external" Width="1.5" PointX="5.25" PointY="115.875" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_plan_master" Width="1.5" PointX="13.75" PointY="70.25" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_reconcile" Width="1.5" PointX="19" PointY="74" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_reconcile_external" Width="1.5" PointX="6.25" PointY="86.25" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_temporary" Width="1.5" PointX="12.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_temporary_external" Width="1.5" PointX="9.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_wh_rule" Width="1.5" PointX="3" PointY="16.375" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_transport_by" Width="1.5" PointX="14.375" PointY="5.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_detail_t_wms_count_plan_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_master_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_t_wms_count_plan_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_external_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_wh_rule_t_wms_rule" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_pick_detail_mini" Width="1.5" PointX="11.375" PointY="15.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_empty" Width="1.5" PointX="0.75" PointY="19.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_count_plan_master_external" Width="1.5" PointX="3" PointY="36.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_detail_external_t_wms_count_plan_master_external" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_master_external_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_external_t_wms_count_plan_master_external" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_zone_location" Width="1.5" PointX="8.25" PointY="102.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_zone_location_t_wms_zone" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashboard_warehouse_virtual" Width="1.5" PointX="19.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_com_resource_master" Width="1.5" PointX="18.375" PointY="23" />
+        <EntityTypeShape EntityType="WMSModel.t_com_locale" Width="1.5" PointX="18.375" PointY="30.25" />
+        <EntityTypeShape EntityType="WMSModel.t_com_resource_detail" Width="1.5" PointX="20.625" PointY="23.25" />
+        <AssociationConnector Association="WMSModel.FK_t_com_resource_detail_t_com_locale" />
+        <AssociationConnector Association="WMSModel.FK_t_com_resource_detail_t_com_resource_master" />
+        <EntityTypeShape EntityType="WMSModel.t_com_process_log" Width="1.5" PointX="21.375" PointY="2.25" />
+        <EntityTypeShape EntityType="WMSModel.t_com_tran_log" Width="1.5" PointX="23.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_com_transaction" Width="1.5" PointX="24.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_adjust_export" Width="1.5" PointX="24.75" PointY="5.75" />
+        <EntityTypeShape EntityType="WMSModel.t_com_report_manager" Width="1.5" PointX="25.375" PointY="12" />
+        <EntityTypeShape EntityType="WMSModel.t_com_report_mapping_para" Width="1.5" PointX="27.625" PointY="12.25" />
+        <AssociationConnector Association="WMSModel.FK_t_com_report_mapping_para_t_com_report_manager" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_print_lpn" Width="1.5" PointX="25.375" PointY="25.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashboard_inventory_status" Width="1.5" PointX="0.75" PointY="13.75" />
+        <EntityTypeShape EntityType="WMSModel.t_com_config_printer" Width="1.5" PointX="25.375" PointY="45.625" />
+        <EntityTypeShape EntityType="WMSModel.t_com_config_printer_group_mapping" Width="1.5" PointX="27.625" PointY="17" />
+        <AssociationConnector Association="WMSModel.FK_t_com_config_printer_group_mapping_t_com_config_printer" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_plan_detail" Width="1.5" PointX="3.375" PointY="19.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile" Width="1.5" PointX="19.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_merge" Width="1.5" PointX="20.375" PointY="26.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inventory_status" Width="1.5" PointX="26.375" PointY="1" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inventory_t_wms_inventory_status" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_location_category" Width="1.5" PointX="9.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_location_customer" Width="1.5" PointX="11.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_zone_category" Width="1.5" PointX="15.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_zone_location" Width="1.5" PointX="16.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashb_center_card_inbound" Width="1.5" PointX="17.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashb_center_card_outbound" Width="1.5" PointX="19.375" PointY="8.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashb_center_period_inbound" Width="1.5" PointX="27.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_dashb_center_period_outbound" Width="1.5" PointX="27.375" PointY="7.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_by_aging" Width="1.5" PointX="13.375" PointY="17.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_manifest_tsp" Width="1.5" PointX="29.375" PointY="26.875" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_manifest_tsp_order_de" Width="1.5" PointX="33.875" PointY="28.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_manifest_tsp_truck" Width="1.5" PointX="31.625" PointY="34.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_manifest_tsp_order_de_t_wms_outbound_manifest_tsp" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_manifest_tsp_truck_t_wms_outbound_manifest_tsp" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_manifest_tsp_order_de_t_wms_outbound_manifest_tsp_truck" />
+        <EntityTypeShape EntityType="WMSModel.t_com_config_printer_group" Width="1.5" PointX="3" PointY="67.375" />
+        <AssociationConnector Association="WMSModel.FK_t_com_config_printer_group_mapping_t_com_config_printer_group" />
+        <AssociationConnector Association="WMSModel.FK_t_com_config_printer_group_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data" Width="1.5" PointX="22.375" PointY="27.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_location_item" Width="1.5" PointX="16" PointY="64.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_mapping_location_item" Width="1.5" PointX="21.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_by_serial" Width="1.5" PointX="15.375" PointY="17.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_by_lpn" Width="1.5" PointX="21.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_inbound_order" Width="1.5" PointX="29.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_outbound_order" Width="1.5" PointX="30.375" PointY="8.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_inbound_order_detail" Width="1.5" PointX="13.375" PointY="31.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_outbound_order_detail" Width="1.5" PointX="15.375" PointY="31.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_pick_detail" Width="1.5" PointX="21.5" PointY="68.625" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pack_detail_t_wms_outbound_pick_detail" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_detail_t_wms_outbound_pick_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_detail_t_wms_wh_item" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_pick_detail_linenumber" Width="1.5" PointX="17.375" PointY="33.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_plan_detail_external" Width="1.5" PointX="34.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_plan_master_external" Width="1.5" PointX="34.375" PointY="8.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_external" Width="1.5" PointX="34.375" PointY="15.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_merge_external" Width="1.5" PointX="19.375" PointY="35.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_user" Width="1.5" PointX="14.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.t_interface_process_log_execute" Width="1.5" PointX="14.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_item_bom" Width="1.5" PointX="16.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_item_bom_detail" Width="1.5" PointX="31.375" PointY="23.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_bom" Width="1.5" PointX="16.25" PointY="43.25" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_bom_detail" Width="1.5" PointX="36.375" PointY="0.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_bom_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_bom_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_bom_t_wms_wh_item" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_bom_detail" Width="1.5" PointX="23.25" PointY="49.5" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_bom_master" Width="1.5" PointX="8.75" PointY="42.625" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_group_bom" Width="1.5" PointX="18.5" PointY="44.5" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inventory_bom" Width="1.5" PointX="16.375" PointY="12.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_bom_detail" Width="1.5" PointX="26.25" PointY="51.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_bom_master" Width="1.5" PointX="21" PointY="46.125" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_group_bom" Width="1.5" PointX="31.375" PointY="23.75" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_master_t_wms_carrier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_master_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_master_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_detail_t_wms_inbound_bom_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_master_t_wms_supplier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_master_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_group_bom_t_wms_item_bom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_group_bom_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_detail_t_wms_outbound_bom_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_bom_master_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.v_outbound_inv_viewer_sum_qty_by_item" Width="1.5" PointX="21.375" PointY="8.75" />
+        <EntityTypeShape EntityType="WMSModel.v_outbound_inv_viewer_sum_qty_item_diff" Width="1.5" PointX="36.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WMSModel.v_outbound_viewer_sum_qty_by_item" Width="1.5" PointX="36.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.v_outbound_viewer_sum_qty_by_item_no_delivery_date" Width="1.5" PointX="29.375" PointY="30.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_for_inv_compare" Width="1.5" PointX="36.375" PointY="14.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_allocate" Width="1.5" PointX="36.375" PointY="24.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_shelf_life" Width="1.5" PointX="11" PointY="40.25" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_shelf_life_t_wms_category" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_shelf_life_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_shelf_life_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_shelf_life_t_wms_wh" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item" Width="1.5" PointX="23.75" PointY="60.25" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_category_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_group_bom_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_bom_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_crossref_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_owner_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_location_item_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_shelf_life_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_wh_item_t_wms_item" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_by_serial_item" Width="1.5" PointX="36.375" PointY="36.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_detail" Width="1.5" PointX="17.25" PointY="50.5" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_detail_t_wms_outbound_detail" />
+        <EntityTypeShape EntityType="WMSModel.t_tms_manifest_order_mapping" Width="1.5" PointX="7.375" PointY="27.75" />
+        <EntityTypeShape EntityType="WMSModel.t_tms_truck_manifest" Width="1.5" PointX="7.375" PointY="31.75" />
+        <AssociationConnector Association="WMSModel.FK_t_tms_manifest_order_mapping_t_tms_truck_manifest" />
+        <EntityTypeShape EntityType="WMSModel.v_tms_assign_order_detail" Width="1.5" PointX="9.375" PointY="35.75" />
+        <EntityTypeShape EntityType="WMSModel.v_tms_assign_order_uncheck" Width="1.5" PointX="38.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_tms_truck_manifest" Width="1.5" PointX="38.375" PointY="15.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_wms_customer" Width="1.5" PointX="38.375" PointY="22.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_wms_item_and_uom" Width="1.5" PointX="38.375" PointY="27.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_detail" Width="1.5" PointX="28.25" PointY="63.25" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_detail_t_wms_wh_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_receipt_detail_t_wms_inbound_detail" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_receipt_header" Width="1.5" PointX="38.375" PointY="33.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_ship_not_po_header" Width="1.5" PointX="38.375" PointY="38.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_ship_not_po_line" Width="1.5" PointX="32.375" PointY="39.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_ship_po_header" Width="1.5" PointX="40.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_receipt_line" Width="1.5" PointX="40.375" PointY="11.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_receipt_detail_v2" Width="1.5" PointX="40.375" PointY="17.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_reprint" Width="1.5" PointX="40.375" PointY="26.75" />
+        <EntityTypeShape EntityType="WMSModel.v_host_m3_ship_po_line" Width="1.5" PointX="40.375" PointY="6.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inbound_detail_v2" Width="1.5" PointX="3.375" PointY="5.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_print_label_viewer" Width="1.5" PointX="0.75" PointY="25.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_receipt_conf_header_export" Width="1.5" PointX="42.375" PointY="26.125" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_ship_conf_detail_export" Width="1.5" PointX="27.375" PointY="34.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_ship_conf_header_export" Width="1.5" PointX="29.375" PointY="39.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_label_printed" Width="1.5" PointX="31.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_host_wms_receipt_conf_detail_export" Width="1.5" PointX="44.625" PointY="25" />
+        <AssociationConnector Association="WMSModel.FK_t_host_wms_receipt_conf_detail_export_t_host_wms_receipt_conf_header_export" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_print_label" Width="1.5" PointX="42.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_sub_category" Width="1.5" PointX="6.75" PointY="23" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_sub_category_t_wms_category" />
+        <EntityTypeShape EntityType="WMSModel.t_host_export_interface_sap_hana" Width="1.5" PointX="42.375" PointY="35.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_outbound_master" Width="1.5" PointX="6" PointY="49.25" />
+        <AssociationConnector Association="WMSModel.FK_t_tms_manifest_order_mapping_t_wms_outbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_master_t_wms_carrier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_master_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_comment_t_wms_outbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_detail_t_wms_outbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_master_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pack_detail_t_wms_outbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_master_t_wms_outbound_master" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_export_inbound_detail_receipt" Width="1.5" PointX="44.375" PointY="9.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_replenishment_task" Width="1.5" PointX="42.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.v_tms_assign_order" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_pickface" Width="1.5" PointX="9.25" PointY="87.125" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_pickface_t_wms_wh_item" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_rel_by_load" Width="1.5" PointX="27.375" PointY="21.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_production_line" Width="1.5" PointX="21.375" PointY="40.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_issue_record" Width="1.5" PointX="38.375" PointY="43.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_outbound_rel_by_load_header" Width="1.5" PointX="42.375" PointY="19.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_item_uom" Width="1.5" PointX="26" PointY="63" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_bom_detail_t_wms_item_uom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_detail_t_wms_item_uom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_po_detail_t_wms_item_uom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_uom_t_wms_item" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_bom_t_wms_item_uom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_crossref_t_wms_item_uom" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_detail_t_wms_item_uom" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_for_dashboard_exp" Width="1.5" PointX="44.375" PointY="18.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_merge_summary" Width="1.5" PointX="5.375" PointY="15.75" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_pallet" Width="1.5" PointX="44.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_inbound_master" Width="1.5" PointX="7.75" PointY="73.875" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_master_t_wms_customer" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_detail_t_wms_inbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_group_bom_t_wms_inbound_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_master_t_wms_owner" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_master_t_wms_supplier" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inbound_master_t_wms_wh" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_receipt_header_t_wms_inbound_master" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_inbound_master_viewer" Width="1.5" PointX="31.375" PointY="44.75" />
+        <EntityTypeShape EntityType="WMSModel.t_wms_location" Width="1.5" PointX="3" PointY="116.25" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_plan_detail_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_count_reconcile_external_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_customer_location_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_inventory_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_item_pickface_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_location_category_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_location_item_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_location_t_wms_wh_master" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_detail_t_wms_location" />
+        <AssociationConnector Association="WMSModel.FK_t_wms_zone_location_t_wms_location" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,6 @@
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\bin\Release\WebSecurityApi.DTO.dll
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\bin\Release\WebSecurityApi.DTO.pdb
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Release\WebSecurityApi.DTO.csproj.AssemblyReference.cache
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Release\WebSecurityApi.DTO.csproj.CoreCompileInputs.cache
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Release\WebSecurityApi.DTO.dll
+D:\Program\Wan_Thai\Web\WebSecurityApi.DTO\obj\Release\WebSecurityApi.DTO.pdb
