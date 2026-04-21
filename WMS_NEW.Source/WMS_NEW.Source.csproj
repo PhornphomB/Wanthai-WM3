@@ -444,6 +444,9 @@
     <Compile Include="v_wms_count_reconcile_pallet.cs">
       <DependentUpon>DataSource.tt</DependentUpon>
     </Compile>
+    <Compile Include="v_wms_count_reconcile_pallet_summary.cs">
+      <DependentUpon>DataSource.tt</DependentUpon>
+    </Compile>
     <Compile Include="v_wms_dashboard_inventory_status.cs">
       <DependentUpon>DataSource.tt</DependentUpon>
     </Compile>

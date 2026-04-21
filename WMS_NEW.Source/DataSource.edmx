@@ -3679,6 +3679,19 @@ warning 6002: The table/view 'WM3.dbo.v_wms_count_reconcile_pallet' does not hav
           <Property Name="create_date" Type="datetime" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
+warning 6002: The table/view 'WM3.dbo.v_wms_count_reconcile_pallet_summary' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="v_wms_count_reconcile_pallet_summary">
+          <Key>
+            <PropertyRef Name="count_master_id" />
+          </Key>
+          <Property Name="count_master_id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="sum_plan_pallet" Type="int" />
+          <Property Name="sum_pallet_count" Type="int" />
+          <Property Name="sum_diff_plus" Type="int" />
+          <Property Name="sum_diff_minus" Type="int" />
+          <Property Name="count_diff_zero" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
 warning 6002: The table/view 'WM3.dbo.v_wms_dashb_center_card_inbound' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="v_wms_dashb_center_card_inbound">
           <Key>
@@ -8227,6 +8240,16 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
     [v_wms_count_reconcile_pallet].[create_date] AS [create_date]
     FROM [dbo].[v_wms_count_reconcile_pallet] AS [v_wms_count_reconcile_pallet]</DefiningQuery>
           </EntitySet>
+          <EntitySet Name="v_wms_count_reconcile_pallet_summary" EntityType="Self.v_wms_count_reconcile_pallet_summary" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [v_wms_count_reconcile_pallet_summary].[count_master_id] AS [count_master_id], 
+    [v_wms_count_reconcile_pallet_summary].[sum_plan_pallet] AS [sum_plan_pallet], 
+    [v_wms_count_reconcile_pallet_summary].[sum_pallet_count] AS [sum_pallet_count], 
+    [v_wms_count_reconcile_pallet_summary].[sum_diff_plus] AS [sum_diff_plus], 
+    [v_wms_count_reconcile_pallet_summary].[sum_diff_minus] AS [sum_diff_minus], 
+    [v_wms_count_reconcile_pallet_summary].[count_diff_zero] AS [count_diff_zero]
+    FROM [dbo].[v_wms_count_reconcile_pallet_summary] AS [v_wms_count_reconcile_pallet_summary]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="v_wms_dashb_center_card_inbound" EntityType="Self.v_wms_dashb_center_card_inbound" store:Type="Views" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [v_wms_dashb_center_card_inbound].[wh_master_id] AS [wh_master_id], 
@@ -11326,6 +11349,7 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
             <End Role="t_wms_zone_location" EntitySet="t_wms_zone_location" />
           </AssociationSet>
           <EntitySet Name="v_wms_count_reconcile_pallet" EntityType="WMSModel.v_wms_count_reconcile_pallet" />
+          <EntitySet Name="v_wms_count_reconcile_pallet_summary" EntityType="WMSModel.v_wms_count_reconcile_pallet_summary" />
           </EntityContainer>
         <EntityType Name="t_wms_customer">
           <Key>
@@ -18138,6 +18162,17 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
           <Property Name="remark2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
         </EntityType>
+        <EntityType Name="v_wms_count_reconcile_pallet_summary">
+          <Key>
+            <PropertyRef Name="count_master_id" />
+          </Key>
+          <Property Name="count_master_id" Type="Guid" Nullable="false" />
+          <Property Name="sum_plan_pallet" Type="Int32" />
+          <Property Name="sum_pallet_count" Type="Int32" />
+          <Property Name="sum_diff_plus" Type="Int32" />
+          <Property Name="sum_diff_minus" Type="Int32" />
+          <Property Name="count_diff_zero" Type="Int32" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -23043,6 +23078,18 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
                 <ScalarProperty Name="zone_id" ColumnName="zone_id" />
                 <ScalarProperty Name="zone" ColumnName="zone" />
                 <ScalarProperty Name="location_id" ColumnName="location_id" />
+                <ScalarProperty Name="count_master_id" ColumnName="count_master_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_wms_count_reconcile_pallet_summary">
+            <EntityTypeMapping TypeName="WMSModel.v_wms_count_reconcile_pallet_summary">
+              <MappingFragment StoreEntitySet="v_wms_count_reconcile_pallet_summary">
+                <ScalarProperty Name="count_diff_zero" ColumnName="count_diff_zero" />
+                <ScalarProperty Name="sum_diff_minus" ColumnName="sum_diff_minus" />
+                <ScalarProperty Name="sum_diff_plus" ColumnName="sum_diff_plus" />
+                <ScalarProperty Name="sum_pallet_count" ColumnName="sum_pallet_count" />
+                <ScalarProperty Name="sum_plan_pallet" ColumnName="sum_plan_pallet" />
                 <ScalarProperty Name="count_master_id" ColumnName="count_master_id" />
               </MappingFragment>
             </EntityTypeMapping>

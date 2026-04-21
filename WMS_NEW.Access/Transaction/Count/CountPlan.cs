@@ -32,11 +32,11 @@ namespace WMS_NEW.Access.Transaction.Count
         public double sum_stock { get; set; }
         public double sum_count { get; set; }
         public double sum_diff { get; set; }
-        public double sum_plan_pallet { get; set; }
-        public double sum_pallet_count { get; set; }
-        public double sum_diff_plus { get; set; }
-        public double sum_diff_minus { get; set; }
-        public double count_diff_zero { get; set; }
+        public int sum_plan_pallet { get; set; }
+        public int sum_pallet_count { get; set; }
+        public int sum_diff_plus { get; set; }
+        public int sum_diff_minus { get; set; }
+        public int count_diff_zero { get; set; }
 
         public double count_miss { get; set; }
         public double count_used { get; set; }
@@ -192,16 +192,15 @@ namespace WMS_NEW.Access.Transaction.Count
 
         public CountTotalSummaryDto GetTotalSummaryPallet(Guid _count_master_id)
         {
-            var result = from rows in this._Model.v_wms_count_reconcile_pallet
+            var result = from rows in this._Model.v_wms_count_reconcile_pallet_summary
                          where rows.count_master_id == _count_master_id
-                         group rows by rows.count_master_id into g
                          select new CountTotalSummaryDto
                          {
-                             sum_plan_pallet = g.Sum(su => su.stock_pallet_qty ?? 0),
-                             sum_pallet_count = g.Sum(su => su.count_pallet_qty ?? 0),
-                             sum_diff_plus = g.Sum(su => (su.different ?? 0) > 0 ? su.different.Value : 0),
-                             sum_diff_minus = g.Sum(su => (su.different ?? 0) < 0 ? su.different.Value : 0),
-                             count_diff_zero = g.Count(c => (c.different ?? 0) == 0),
+                             sum_plan_pallet = rows.sum_plan_pallet ?? 0,
+                             sum_pallet_count = rows.sum_pallet_count ?? 0,
+                             sum_diff_plus = rows.sum_diff_plus ?? 0,
+                             sum_diff_minus = rows.sum_diff_minus ?? 0,
+                             count_diff_zero = rows.count_diff_zero ?? 0,
                          };
 
             return result.FirstOrDefault();
