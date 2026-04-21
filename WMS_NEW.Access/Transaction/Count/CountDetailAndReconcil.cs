@@ -40,29 +40,15 @@ namespace WMS_NEW.Access.Transaction.Count
         public override void InitialStoreView()
         {
             var _count_master_id = (Guid?)this.FilterCustom.FirstOrDefault(qry => qry.DataFieldValue == "_count_master_id")?.Value;
-            var _active_load = this.FilterCustom.FirstOrDefault(wh => wh.DataFieldValue == "_active_load");
-            if (_active_load != null)
-            {
-                if (_active_load.Value == null && _count_master_id != null)
-                {
-                    this.StoreNameQuery = "usp_wms_count_reconcile_merge_by_master";
-                    this.StoreParameterQuery.Add(new System.Data.SqlClient.SqlParameter("@in_uniqCountMasterId", _count_master_id));
-                }
-            }
+            this.StoreNameQuery = "usp_wms_count_reconcile_merge_by_master";
+            this.StoreParameterQuery.Add(new System.Data.SqlClient.SqlParameter("@in_uniqCountMasterId", _count_master_id));
         }
 
         public override void InitialStoreExport()
         {
             var _count_master_id = (Guid?)this.FilterCustom.FirstOrDefault(qry => qry.DataFieldValue == "_count_master_id")?.Value;
-            var _active_load = this.FilterCustom.FirstOrDefault(wh => wh.DataFieldValue == "_active_load");
-            if (_active_load != null)
-            {
-                if (_active_load.Value == null && _count_master_id != null)
-                {
-                    this.StoreNameExport = "usp_wms_count_reconcile_merge_by_master";
-                    this.StoreParameterExport.Add(new System.Data.SqlClient.SqlParameter("@in_uniqCountMasterId", _count_master_id));
-                }
-            }
+            this.StoreNameExport = "usp_wms_count_reconcile_merge_by_master";
+            this.StoreParameterExport.Add(new System.Data.SqlClient.SqlParameter("@in_uniqCountMasterId", _count_master_id));
         }
 
         #endregion

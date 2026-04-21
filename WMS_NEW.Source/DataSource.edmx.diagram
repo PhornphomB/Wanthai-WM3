@@ -265,7 +265,6 @@
         <AssociationConnector Association="WMSModel.FK_t_wms_outbound_detail_t_wms_item_uom" />
         <EntityTypeShape EntityType="WMSModel.v_wms_inventory_data_for_dashboard_exp" Width="1.5" PointX="44.375" PointY="18.75" />
         <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_merge_summary" Width="1.5" PointX="5.375" PointY="15.75" />
-        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_pallet" Width="1.5" PointX="44.375" PointY="0.75" />
         <EntityTypeShape EntityType="WMSModel.t_wms_inbound_master" Width="1.5" PointX="7.75" PointY="73.875" />
         <AssociationConnector Association="WMSModel.FK_t_wms_inbound_master_t_wms_customer" />
         <AssociationConnector Association="WMSModel.FK_t_wms_inbound_detail_t_wms_inbound_master" />
@@ -287,6 +286,7 @@
         <AssociationConnector Association="WMSModel.FK_t_wms_location_t_wms_wh_master" />
         <AssociationConnector Association="WMSModel.FK_t_wms_outbound_pick_detail_t_wms_location" />
         <AssociationConnector Association="WMSModel.FK_t_wms_zone_location_t_wms_location" />
+        <EntityTypeShape EntityType="WMSModel.v_wms_count_reconcile_pallet" Width="1.5" PointX="44.375" PointY="0.75" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

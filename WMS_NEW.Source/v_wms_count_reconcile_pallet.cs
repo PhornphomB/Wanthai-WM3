@@ -27,5 +27,6 @@ namespace WMS_NEW.Source
         public string description { get; set; }
         public string remark1 { get; set; }
         public string remark2 { get; set; }
+        public System.DateTime create_date { get; set; }
     }
 }

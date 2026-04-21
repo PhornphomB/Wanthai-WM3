@@ -1041,6 +1041,15 @@ namespace WMS_NEW.Transaction.Count
         protected global::_UControls.GridColumnExt GridColumnExt61;
 
         /// <summary>
+        /// GridColumnExt69 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::_UControls.GridColumnExt GridColumnExt69;
+
+        /// <summary>
         /// btClosePlan control.
         /// </summary>
         /// <remarks>

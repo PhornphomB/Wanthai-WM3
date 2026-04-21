@@ -268,7 +268,7 @@ namespace WMS_NEW.Transaction.Count
                     hidrec_count_master_id_rfid.SetValue(dto.count_master_id);
                     //gridCountReconcilRfid.Search();
 
-                    
+
 
                     SearchByTabActive(true);
 
@@ -359,9 +359,9 @@ namespace WMS_NEW.Transaction.Count
             }
         }
 
-                #region Function Report Viewer
+        #region Function Report Viewer
 
-                protected void btPrint_Click(object sender, EventArgs e)
+        protected void btPrint_Click(object sender, EventArgs e)
         {
             try
             {

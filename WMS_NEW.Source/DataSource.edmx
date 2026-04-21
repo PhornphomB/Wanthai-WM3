@@ -3661,6 +3661,7 @@ warning 6002: The table/view 'WM3.dbo.v_wms_count_reconcile_pallet' does not hav
             <PropertyRef Name="count_master_id" />
             <PropertyRef Name="location_id" />
             <PropertyRef Name="location" />
+            <PropertyRef Name="create_date" />
           </Key>
           <Property Name="count_master_id" Type="uniqueidentifier" Nullable="false" />
           <Property Name="location_id" Type="uniqueidentifier" Nullable="false" />
@@ -3675,6 +3676,7 @@ warning 6002: The table/view 'WM3.dbo.v_wms_count_reconcile_pallet' does not hav
           <Property Name="description" Type="nvarchar" MaxLength="200" />
           <Property Name="remark1" Type="nvarchar" MaxLength="500" />
           <Property Name="remark2" Type="nvarchar" MaxLength="500" />
+          <Property Name="create_date" Type="datetime" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'WM3.dbo.v_wms_dashb_center_card_inbound' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -8221,7 +8223,8 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
     [v_wms_count_reconcile_pallet].[item_number] AS [item_number], 
     [v_wms_count_reconcile_pallet].[description] AS [description], 
     [v_wms_count_reconcile_pallet].[remark1] AS [remark1], 
-    [v_wms_count_reconcile_pallet].[remark2] AS [remark2]
+    [v_wms_count_reconcile_pallet].[remark2] AS [remark2], 
+    [v_wms_count_reconcile_pallet].[create_date] AS [create_date]
     FROM [dbo].[v_wms_count_reconcile_pallet] AS [v_wms_count_reconcile_pallet]</DefiningQuery>
           </EntitySet>
           <EntitySet Name="v_wms_dashb_center_card_inbound" EntityType="Self.v_wms_dashb_center_card_inbound" store:Type="Views" store:Schema="dbo">
@@ -11247,7 +11250,6 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
             <Parameter Name="out_ErrorMessage" Mode="InOut" Type="String" />
           </FunctionImport>
           <EntitySet Name="v_wms_count_reconcile_merge_summary" EntityType="WMSModel.v_wms_count_reconcile_merge_summary" />
-          <EntitySet Name="v_wms_count_reconcile_pallet" EntityType="WMSModel.v_wms_count_reconcile_pallet" />
           <EntitySet Name="t_wms_inbound_master" EntityType="WMSModel.t_wms_inbound_master" />
           <AssociationSet Name="FK_t_wms_inbound_master_t_wms_customer" Association="WMSModel.FK_t_wms_inbound_master_t_wms_customer">
             <End Role="t_wms_customer" EntitySet="t_wms_customer" />
@@ -11323,6 +11325,7 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
             <End Role="t_wms_location" EntitySet="t_wms_location" />
             <End Role="t_wms_zone_location" EntitySet="t_wms_zone_location" />
           </AssociationSet>
+          <EntitySet Name="v_wms_count_reconcile_pallet" EntityType="WMSModel.v_wms_count_reconcile_pallet" />
           </EntityContainer>
         <EntityType Name="t_wms_customer">
           <Key>
@@ -17747,26 +17750,6 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
           <Property Name="total_count_qty" Type="Double" />
           <Property Name="total_diff_qty" Type="Double" />
         </EntityType>
-        <EntityType Name="v_wms_count_reconcile_pallet">
-          <Key>
-            <PropertyRef Name="count_master_id" />
-            <PropertyRef Name="location_id" />
-            <PropertyRef Name="location" />
-          </Key>
-          <Property Name="count_master_id" Type="Guid" Nullable="false" />
-          <Property Name="location_id" Type="Guid" Nullable="false" />
-          <Property Name="zone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="zone_id" Type="Guid" />
-          <Property Name="location" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="stock_pallet_qty" Type="Int32" />
-          <Property Name="count_pallet_qty" Type="Int32" />
-          <Property Name="different" Type="Int32" />
-          <Property Name="wh_item_master_id" Type="Guid" />
-          <Property Name="item_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
-          <Property Name="remark1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-          <Property Name="remark2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-        </EntityType>
         <EntityType Name="t_wms_inbound_master">
           <Key>
             <PropertyRef Name="inbound_order_master_id" />
@@ -18133,6 +18116,28 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="v_wms_count_reconcile_pallet">
+          <Key>
+            <PropertyRef Name="count_master_id" />
+            <PropertyRef Name="location_id" />
+            <PropertyRef Name="location" />
+            <PropertyRef Name="create_date" />
+          </Key>
+          <Property Name="count_master_id" Type="Guid" Nullable="false" />
+          <Property Name="location_id" Type="Guid" Nullable="false" />
+          <Property Name="zone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="zone_id" Type="Guid" />
+          <Property Name="location" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="stock_pallet_qty" Type="Int32" />
+          <Property Name="count_pallet_qty" Type="Int32" />
+          <Property Name="different" Type="Int32" />
+          <Property Name="wh_item_master_id" Type="Guid" />
+          <Property Name="item_number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="remark1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="remark2" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="create_date" Type="DateTime" Nullable="false" Precision="3" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -22896,25 +22901,6 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
-          <EntitySetMapping Name="v_wms_count_reconcile_pallet">
-            <EntityTypeMapping TypeName="WMSModel.v_wms_count_reconcile_pallet">
-              <MappingFragment StoreEntitySet="v_wms_count_reconcile_pallet">
-                <ScalarProperty Name="remark2" ColumnName="remark2" />
-                <ScalarProperty Name="remark1" ColumnName="remark1" />
-                <ScalarProperty Name="description" ColumnName="description" />
-                <ScalarProperty Name="item_number" ColumnName="item_number" />
-                <ScalarProperty Name="wh_item_master_id" ColumnName="wh_item_master_id" />
-                <ScalarProperty Name="different" ColumnName="different" />
-                <ScalarProperty Name="count_pallet_qty" ColumnName="count_pallet_qty" />
-                <ScalarProperty Name="stock_pallet_qty" ColumnName="stock_pallet_qty" />
-                <ScalarProperty Name="location" ColumnName="location" />
-                <ScalarProperty Name="zone_id" ColumnName="zone_id" />
-                <ScalarProperty Name="zone" ColumnName="zone" />
-                <ScalarProperty Name="location_id" ColumnName="location_id" />
-                <ScalarProperty Name="count_master_id" ColumnName="count_master_id" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="t_wms_inbound_master">
             <EntityTypeMapping TypeName="WMSModel.t_wms_inbound_master">
               <MappingFragment StoreEntitySet="t_wms_inbound_master">
@@ -23038,6 +23024,26 @@ warning 6035: The relationship 'FK_t_wms_owner_t_wms_owner' has columns that are
                 <ScalarProperty Name="pick_area_id" ColumnName="pick_area_id" />
                 <ScalarProperty Name="wh_master_id" ColumnName="wh_master_id" />
                 <ScalarProperty Name="location_id" ColumnName="location_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="v_wms_count_reconcile_pallet">
+            <EntityTypeMapping TypeName="WMSModel.v_wms_count_reconcile_pallet">
+              <MappingFragment StoreEntitySet="v_wms_count_reconcile_pallet">
+                <ScalarProperty Name="create_date" ColumnName="create_date" />
+                <ScalarProperty Name="remark2" ColumnName="remark2" />
+                <ScalarProperty Name="remark1" ColumnName="remark1" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="item_number" ColumnName="item_number" />
+                <ScalarProperty Name="wh_item_master_id" ColumnName="wh_item_master_id" />
+                <ScalarProperty Name="different" ColumnName="different" />
+                <ScalarProperty Name="count_pallet_qty" ColumnName="count_pallet_qty" />
+                <ScalarProperty Name="stock_pallet_qty" ColumnName="stock_pallet_qty" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="zone_id" ColumnName="zone_id" />
+                <ScalarProperty Name="zone" ColumnName="zone" />
+                <ScalarProperty Name="location_id" ColumnName="location_id" />
+                <ScalarProperty Name="count_master_id" ColumnName="count_master_id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

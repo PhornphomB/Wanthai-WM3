@@ -50,7 +50,8 @@ namespace WMS_NEW.Access.Transaction.Count
                              rows.item_number,
                              rows.description,
                              rows.remark1,
-                             rows.remark2
+                             rows.remark2,
+                             rows.create_date
                          };
 
             return result;

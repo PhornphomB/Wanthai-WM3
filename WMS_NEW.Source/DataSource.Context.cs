@@ -180,10 +180,10 @@ namespace WMS_NEW.Source
         public virtual DbSet<t_wms_item_uom> t_wms_item_uom { get; set; }
         public virtual DbSet<v_wms_inventory_data_for_dashboard_exp> v_wms_inventory_data_for_dashboard_exp { get; set; }
         public virtual DbSet<v_wms_count_reconcile_merge_summary> v_wms_count_reconcile_merge_summary { get; set; }
-        public virtual DbSet<v_wms_count_reconcile_pallet> v_wms_count_reconcile_pallet { get; set; }
         public virtual DbSet<t_wms_inbound_master> t_wms_inbound_master { get; set; }
         public virtual DbSet<v_wms_inbound_master_viewer> v_wms_inbound_master_viewer { get; set; }
         public virtual DbSet<t_wms_location> t_wms_location { get; set; }
+        public virtual DbSet<v_wms_count_reconcile_pallet> v_wms_count_reconcile_pallet { get; set; }
     
         public virtual int usp_generate_running_lpn(string in_vchApplicationID, string in_vchWarehouseCode, string in_vchDeviceID, string in_vchUserID, string in_vchPrefix, string in_vchSuffix, Nullable<int> in_fltQtySerial, string in_vchGenerateType, ObjectParameter in_vchLPN, ObjectParameter out_ErrorCode, ObjectParameter out_ErrorMessage)
         {

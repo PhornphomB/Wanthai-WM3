@@ -217,6 +217,7 @@
                                 <ucControls:GridColumnExt ID="GridColumnExt67" runat="server" HeaderText="Different" DataField="different" AllowSort="true" ResourceGroup="count" ResourceName="different" />
                                 <ucControls:GridColumnExt ID="GridColumnExt68" runat="server" HeaderText="Remark1" DataField="remark1" AllowSort="true" ResourceGroup="count" ResourceName="remark1" />
                                 <ucControls:GridColumnExt ID="GridColumnExt61" runat="server" HeaderText="Remark2" DataField="remark2" AllowSort="true" ResourceGroup="count" ResourceName="remark2" />
+                                <ucControls:GridColumnExt ID="GridColumnExt69" runat="server" HeaderText="Create Date" DataField="create_date" AllowSort="true" ResourceGroup="count" ResourceName="create_date" FormatType="Date" />
                             </CustomColumnTemplate>
                         </ucControls:GridExt>
                     </ucControls:PanelControlTab>
